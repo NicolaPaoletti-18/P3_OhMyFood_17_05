@@ -1,7 +1,8 @@
 @media (max-width: 599px) {
-  .header--div__btn-explorer {
+  .header--nav__btn-explorer {
     border: 1px solid;
-    width: 100%;
+    width: 50%;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

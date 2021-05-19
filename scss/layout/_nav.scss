@@ -1,0 +1,11 @@
+.nav{
+    @media (max-width: 599px) {
+    &--ul{
+        width: 100%;
+        margin: auto;
+        &--link{
+        margin: auto;
+        }
+    }
+    }
+}
