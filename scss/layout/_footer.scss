@@ -1,0 +1,16 @@
+.footer{
+    background-color: $color-black;
+    @media (max-width:599px){
+        &__heading{
+            width: 30%;   
+        }
+        &__ul{
+        list-style: none;   
+        &__link {
+          &__link--a{
+              text-decoration: none;
+        }
+        }
+    }
+}
+}
