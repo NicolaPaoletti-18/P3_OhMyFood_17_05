@@ -1,5 +1,16 @@
+
+@font-face{
+    font-family:"Roboto";
+    src:url(fonts/Roboto/Roboto-black.ttf);
+    font-family: 'Shrikhand';
+    src: url(fonts/Shrikhand/Shrikhand-Regular.ttf);
+         
+}
+
 $color-primary:#9356DC;
 $color-secondary: #FF79DA ;
 $color-tertiary:#99E2D0;
 $color-white:#fff;
 $color-black:#000;
+$font-primary:'Roboto';
+$font-heading: 'Shrikhand';

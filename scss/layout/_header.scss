@@ -1,5 +1,5 @@
 .header{
-    font-family: $font-family;
+    font-family: $font-primary;
     @media (max-width:599px){
         
         border: 1px solid $color-black;
@@ -12,9 +12,10 @@
         &__p{
             display: flex;
             justify-content: center;
+            text-align: center;
         }
         &__heading{
-        font-family: $font-family-heading;
+        font-family: $font-heading;
         margin: auto;
         display: flex;
         justify-content: center;

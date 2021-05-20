@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(fonts/Roboto/Roboto-black.ttf);
+  font-family: 'Shrikhand';
+  src: url(fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+.block_page {
+  font-family: "Roboto";
+  color: #000;
+}
+
+.header--nav__btn-explorer {
+  font-family: "Roboto";
+}
+
 @media (max-width: 599px) {
   .header--nav__btn-explorer {
     border: 1px solid;
@@ -13,7 +29,7 @@
 }
 
 .header {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
 }
 
 @media (max-width: 599px) {
@@ -33,6 +49,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
   }
   .header--nav__heading {
     font-family: "Shrikhand";
@@ -56,13 +73,29 @@
 }
 
 @media (max-width: 599px) {
-  .nav--ul {
+  .nav__ul {
     width: 100%;
-    margin: auto;
   }
-  .nav--ul--link {
+  .nav__ul__link {
     margin: auto;
+    width: 50%;
+    border: 1px solid #000;
+    padding: auto;
   }
+}
+
+.container__heading {
+  font-family: "Roboto";
+  color: #000;
+}
+
+.container .proj-prev {
+  width: 50%;
+  margin: auto;
+}
+
+.container .proj-prev__img {
+  width: 50%;
 }
 
 @media (max-width: 599px) {

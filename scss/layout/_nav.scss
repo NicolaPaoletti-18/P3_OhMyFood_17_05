@@ -1,11 +1,14 @@
 .nav{
+
     @media (max-width: 599px) {
-    &--ul{
-        width: 100%;
+    &__ul{
+       width: 100%;
+        &__link{
         margin: auto;
-        &--link{
-        margin: auto;
+        width: 50%;
+         border: 1px solid $color-black;
+         padding: auto;
         }
     }
-    }
+  }
 }

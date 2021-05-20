@@ -1,0 +1,15 @@
+.container{
+    &__heading{
+        
+        font-family: $font-primary;
+        color: $color-black;
+    
+    }
+    .proj-prev{
+        width: 50%;
+        margin: auto;
+        &__img{
+            width: 50%;
+        }
+    }
+}
