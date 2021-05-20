@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Roboto";
-  src: url(fonts/Roboto/Roboto-black.ttf);
+  src: url(/font/Roboto-Black.ttf);
   font-family: 'Shrikhand';
-  src: url(fonts/Shrikhand/Shrikhand-Regular.ttf);
+  src: url(/font/Shrikhand-Regular.ttf);
 }
 
 .block_page {
