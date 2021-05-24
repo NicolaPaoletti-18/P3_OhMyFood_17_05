@@ -1,22 +1,25 @@
 .container{
     background-color: $color-background;
+    padding: 10px;
     &__heading{
-
+        font-size: $font-size-heading;
         font-family: $font-primary;
         color: $color-black;
     
     }
+    @media (max-width: 599px) {
     .proj-prev{
         width: 80%;
         margin: auto;
         margin-bottom: 20px;
-        border: 1px solid ;
+      
         border-radius: $size $size;
         background-color: $color-white;
         &__a{
             text-decoration: none;
         }
         &__img{
+            background-image: url();
             width: 100%;
             height: 150px;
             border-radius: $size $size 0px 0px;
@@ -36,6 +39,30 @@
                 width: 90%;
                 margin: auto;
             }
+        }
+    }
+  }
+}
+.section{
+    @media (max-width: 599px){
+        &__list{
+            padding: 0px;
+            &__link{
+                display: inherit;
+                border: 1px solid ;
+                border-radius: $size;
+                padding: 10px;
+                margin-bottom: 15px;
+            &-type{
+                margin: 0px;
+            
+            &--span{
+                display: flex;
+                justify-content: flex-end;
+                margin-top: -20px;
+              }
+            }
+         }
         }
     }
 }

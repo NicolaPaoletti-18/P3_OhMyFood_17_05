@@ -2,9 +2,11 @@
      
     @media (max-width:599px){
         border: 1px solid ;
-       width: 50%;
-       margin:  auto;
-       display: flex;
-       justify-content: center;
+        width: 50%;
+        margin:  auto;
+        display: flex;
+        justify-content: center;
+        border-radius: $size;
+        padding: 10px;
         }
     }

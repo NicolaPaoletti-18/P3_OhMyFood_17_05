@@ -9,6 +9,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
   }
 }
 /*# sourceMappingURL=buttons.css.map */
