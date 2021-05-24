@@ -6,7 +6,19 @@
         margin:  auto;
         display: flex;
         justify-content: center;
-        border-radius: $size;
+        border-radius: 20px;
         padding: 10px;
         }
     }
+.proj-prev__btn-vert{
+    @media (max-width:599px){
+    border: 1px solid black ;
+    width: 20%;
+    margin:10px;
+    display: flex;
+    position: absolute;
+    background-color: $color-tertiary;
+    justify-content:center;
+    
+    }
+}
