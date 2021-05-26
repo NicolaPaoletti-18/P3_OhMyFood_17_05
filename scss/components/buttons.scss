@@ -12,6 +12,7 @@
         >a{
             color: white;
             text-decoration: none;
+            font-family: $font-primary;
         }
         }
     }
@@ -38,10 +39,11 @@
         justify-content: center;
         border-radius: 20px;
         padding: 10px;
-        background: linear-gradient($color-secondary, $color-primary 90%);
+        background: linear-gradient($color-secondary , $color-primary 90%);
         > a{
             color: $color-white;
             text-decoration: none;
+            font-family: $font-primary;
         }
     }
 }
