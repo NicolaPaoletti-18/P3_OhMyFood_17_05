@@ -182,6 +182,8 @@
     background-color: #f2f2f2a6;
     border-radius: 20px;
     padding: 15px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
   }
   .nav__ul__link--a {
     text-decoration: none;
@@ -221,6 +223,8 @@
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
     border-radius: 20px 20px;
     background-color: #fff;
   }
@@ -249,8 +253,11 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    width: 90%;
     margin: auto;
+    color: #f2f2f2a6;
+  }
+  .container .proj-prev__txt .fa-heart:hover {
+    color: blue;
   }
 }
 

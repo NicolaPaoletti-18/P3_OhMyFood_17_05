@@ -12,7 +12,7 @@
         width: 80%;
         margin: auto;
         margin-bottom: 20px;
-      
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
         border-radius: $size $size;
         background-color: $color-white;
         &__a{
@@ -35,8 +35,11 @@
                 font-size: 20px;
                 display: flex;
                 justify-content: flex-end;
-                width: 90%;
                 margin: auto;
+                color: $color-background;
+                &:hover{
+                    color: blue;
+                }
             }
             
         }
@@ -53,6 +56,7 @@
                 border-radius: $size;
                 padding: 10px;
                 margin-bottom: 15px;
+                
                 > a{
                     text-decoration: none;
                     color: $color-black;
