@@ -13,7 +13,7 @@
 
 @media (max-width: 599px) {
   .header--nav__btn-explorer {
-    border: 1px solid;
+    border: 1px solid white;
     width: 50%;
     margin: auto;
     display: -webkit-box;
@@ -24,6 +24,12 @@
             justify-content: center;
     border-radius: 20px;
     padding: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(90%, #9356DC));
+    background: linear-gradient(#FF79DA, #9356DC 90%);
+  }
+  .header--nav__btn-explorer > a {
+    color: white;
+    text-decoration: none;
   }
 }
 
@@ -45,7 +51,7 @@
 
 @media (max-width: 599px) {
   .section__btn-commander {
-    border: 1px solid;
+    border: 1px solid white;
     width: 50%;
     margin: auto;
     display: -webkit-box;
@@ -56,6 +62,12 @@
             justify-content: center;
     border-radius: 20px;
     padding: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(90%, #9356DC));
+    background: linear-gradient(#FF79DA, #9356DC 90%);
+  }
+  .section__btn-commander > a {
+    color: #fff;
+    text-decoration: none;
   }
 }
 

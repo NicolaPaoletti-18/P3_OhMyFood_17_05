@@ -1,13 +1,18 @@
 .header--nav__btn-explorer{
      
     @media (max-width:599px){
-        border: 1px solid ;
+        border: 1px solid white;
         width: 50%;
         margin:  auto;
         display: flex;
         justify-content: center;
         border-radius: 20px;
         padding: 10px;
+        background: linear-gradient($color-secondary, $color-primary 90%);
+        >a{
+            color: white;
+            text-decoration: none;
+        }
         }
     }
 .proj-prev__btn-vert{
@@ -24,12 +29,17 @@
 }
 .section__btn-commander{
     @media (max-width:599px){
-        border: 1px solid ;
+        border: 1px solid white ;
         width: 50%;
         margin:  auto;
         display: flex;
         justify-content: center;
         border-radius: 20px;
         padding: 10px;
+        background: linear-gradient($color-secondary, $color-primary 90%);
+        > a{
+            color: $color-white;
+            text-decoration: none;
+        }
     }
 }
