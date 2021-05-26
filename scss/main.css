@@ -251,6 +251,10 @@
     padding: 10px;
     margin-bottom: 15px;
   }
+  .section__list__link > a {
+    text-decoration: none;
+    color: #000;
+  }
   .section__list__link-type {
     margin: 0px;
   }
