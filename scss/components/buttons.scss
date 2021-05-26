@@ -22,3 +22,14 @@
     
     }
 }
+.section__btn-commander{
+    @media (max-width:599px){
+        border: 1px solid ;
+        width: 50%;
+        margin:  auto;
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 10px;
+    }
+}

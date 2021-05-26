@@ -14,6 +14,7 @@
         margin-bottom: 10px;
         width: 80%;
          border: 1px solid $color-background;
+         background-color: $color-background;
          border-radius: $size;
          padding: 15px;
          &--a{
@@ -30,7 +31,7 @@
                 font-size: $font-size3;
                 background-color: $color-primary;
                 &__strong{
-                    margin: 60px;
+                    margin-left: 60px;
                     color: $color-black;
                     font-size: $font-size;
                 }
