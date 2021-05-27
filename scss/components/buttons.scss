@@ -23,15 +23,13 @@
     }
 .proj-prev__btn-vert{
     @media (max-width:599px){
-    border: 1px solid black ;
     width: 20%;
     margin:10px;
-    margin-left: 200px;
+    margin-left: 220px;
     display: flex;
     position: absolute;
     background-color: $color-tertiary;
     justify-content:center;
-    color: $color-tertiary 20%;
     
     }
 }

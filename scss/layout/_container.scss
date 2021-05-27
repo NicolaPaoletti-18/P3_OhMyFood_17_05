@@ -10,11 +10,17 @@
     @media (max-width: 599px) {
     .proj-prev{
         width: 80%;
+        height: 210px;
         margin: auto;
         margin-bottom: 20px;
         box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
         border-radius: $size $size;
         background-color: $color-white;
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover{
+            transform: scale(1.05);
+        }
         &__a{
             text-decoration: none;
         }
@@ -26,18 +32,18 @@
         &__txt{
             width: 90%;
             height: 60px;
-            margin: auto;
+            margin: 10px;
             color: $color-black;
             .p{
-                margin-top: -10px;
+                margin-top: -15px;
             }
             .fa-heart{
                 font-size: 20px;
                 display: flex;
                 justify-content: flex-end;
                 margin: auto;
-                color: $color-background;
-                &:hover{
+                
+                &:active{
                     color: blue;
                 }
             }
@@ -47,13 +53,22 @@
   }
 }
 .section{
+    background-color: $color-background;
     @media (max-width: 599px){
         &__list{
             padding: 0px;
+            &__heading{
+                margin-left: 10px;
+                border-bottom: 2px solid $color-tertiary;
+                width: 9%;
+            }
             &__link{
+                background-color: $color-white;
+                width: 90%;
+                margin: auto;
                 display: inherit;
-                border: 1px solid ;
                 border-radius: $size;
+                box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15 );
                 padding: 10px;
                 margin-bottom: 15px;
                 
@@ -63,6 +78,7 @@
                 }
             &-type{
                 margin: 0px;
+                font-size: $font-size;
             
             &--span{
                 display: flex;
