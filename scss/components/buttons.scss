@@ -9,6 +9,11 @@
         border-radius: 20px;
         padding: 10px;
         background: linear-gradient($color-secondary, $color-primary 90%);
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover{
+            transform: scale(1.05);
+        }
         >a{
             color: white;
             text-decoration: none;

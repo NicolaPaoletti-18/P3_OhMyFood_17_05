@@ -2,7 +2,9 @@
     background-color: $color-black;
     @media (max-width:599px){
         &__heading{
-            width: 30%;   
+            width: 30%;  
+            margin-top: 10px; 
+            filter:  invert(100%);
         }
         &__ul{
         list-style: none; 

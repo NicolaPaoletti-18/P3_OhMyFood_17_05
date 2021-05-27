@@ -18,10 +18,21 @@
          border-radius: $size;
          padding: 15px;
          box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15 );
+         transform: scale(1);
+         transition: transform 400ms;
+         &:hover{
+             background-color: #d6f2fbb5;
+             transform: scale(1.05);
+             .fas{
+                    color: #9356DC;
+             }
+         }
          &--a{
             text-decoration: none;
             &>.fas{
                 margin-left: 30px;
+                color: rgb(216, 213, 213);
+               
             }
              &--span{
                  margin-left: -6%;

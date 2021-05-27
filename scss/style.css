@@ -26,6 +26,16 @@
     padding: 10px;
     background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(90%, #9356DC));
     background: linear-gradient(#FF79DA, #9356DC 90%);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  .header--nav__btn-explorer:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
   }
   .header--nav__btn-explorer > a {
     color: white;
@@ -155,6 +165,9 @@
 @media (max-width: 599px) {
   .footer__heading {
     width: 30%;
+    margin-top: 10px;
+    -webkit-filter: invert(100%);
+            filter: invert(100%);
   }
   .footer__ul {
     list-style: none;
@@ -186,12 +199,27 @@
     padding: 15px;
     -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  .nav__ul__link:hover {
+    background-color: #d6f2fbb5;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .nav__ul__link:hover .fas {
+    color: #9356DC;
   }
   .nav__ul__link--a {
     text-decoration: none;
   }
   .nav__ul__link--a > .fas {
     margin-left: 30px;
+    color: #d8d5d5;
   }
   .nav__ul__link--a--span {
     margin-left: -6%;
@@ -199,7 +227,7 @@
     border-radius: 50%;
     padding: 0 2px;
     color: #fff;
-    font-size: 9px;
+    font-size: 10px;
     background-color: #9356DC;
   }
   .nav__ul__link--a--span__strong {
