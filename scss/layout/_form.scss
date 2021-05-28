@@ -1,9 +1,18 @@
 .form{
 @media (max-width:599px){
    
-    border: 1px solid ;
    width: 100%;
    display: flex;
    justify-content: center;
-    }
+   height: 30px;
+   background-color: #80808057;
+   box-shadow: -3px 0px 19px -5px black;
+   .nav_search{
+    background: #80808000;
+    border: 0px;
+   }
+   .fa-map-marker-alt{
+       margin-top: 7px;
+   }
 }
+    }
