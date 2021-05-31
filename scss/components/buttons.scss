@@ -1,16 +1,7 @@
 .header--nav__btn-explorer{
      
     @media (max-width:599px){
-        border: 1px solid white;
-        width: 50%;
-        margin:  auto;
-        display: flex;
-        justify-content: center;
-        border-radius: 20px;
-        padding: 10px;
-        background: linear-gradient($color-secondary, $color-primary 90%);
-        transform: scale(1);
-        transition: transform 400ms;
+       @include button-1;
         &:hover{
             transform: scale(1.05);
         }
@@ -23,28 +14,13 @@
     }
 .proj-prev__btn-vert{
     @media (max-width:599px){
-    width: 20%;
-    margin:10px;
-    margin-left: 220px;
-    display: flex;
-    position: absolute;
-    background-color: $color-tertiary;
-    justify-content:center;
+    @include btn-vert;
     
     }
 }
 .section__btn-commander{
     @media (max-width:599px){
-        border: 1px solid white ;
-        width: 50%;
-        margin:  auto;
-        display: flex;
-        justify-content: center;
-        border-radius: 20px;
-        padding: 10px;
-        background: linear-gradient($color-secondary , $color-primary 90%);
-        transform: scale(1);
-        transition: transform 400ms;
+        @include button-1;
         &:hover{
             transform: scale(1.05);
         }

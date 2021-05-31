@@ -1,0 +1,55 @@
+
+@mixin button-1 {
+    border: 1px solid white;
+    width: 50%;
+    margin:  auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+    background: linear-gradient($color-secondary, $color-primary 90%);
+    transform: scale(1);
+    transition: transform 400ms;
+}
+@mixin btn-vert {
+    width: 20%;
+    margin:10px;
+    margin-left: 220px;
+    display: flex;
+    position: absolute;
+    background-color: $color-tertiary;
+    justify-content:center;
+}
+@mixin cards {
+    width: 80%;
+        height: 210px;
+        margin: auto;
+        margin-bottom: 20px;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+        border-radius: $size $size;
+        background-color: $color-white;
+        transform: scale(1);
+        transition: transform 400ms;
+}
+@mixin nav-1 {
+    border: 1px solid $color-background;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15 );
+    border-radius: $size;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%;
+    background-color: $color-background;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+@mixin  list {
+    background-color: $color-white;
+    width: 90%;
+    margin: auto;
+    display: inherit;
+    border-radius: $size;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15 );
+    padding: 10px;
+    margin-bottom: 15px;
+}
