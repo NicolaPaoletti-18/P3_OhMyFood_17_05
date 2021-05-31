@@ -9,7 +9,8 @@
     padding: 10px;
     background: linear-gradient($color-secondary, $color-primary 90%);
     transform: scale(1);
-    transition: transform 400ms;
+    transition: transform 400ms ease-in-out;
+    animation: rotate-btn 5s 3 ease-in-out;
 }
 @mixin btn-vert {
     width: 20%;
@@ -19,17 +20,18 @@
     position: absolute;
     background-color: $color-tertiary;
     justify-content:center;
+    color:darken($color-tertiary, $amount: 50%);
 }
 @mixin cards {
-    width: 80%;
+        width: 80%;
         height: 210px;
         margin: auto;
         margin-bottom: 20px;
-        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.5);
         border-radius: $size $size;
         background-color: $color-white;
         transform: scale(1);
-        transition: transform 400ms;
+        transition: transform 400ms ease-in-out;
 }
 @mixin nav-1 {
     border: 1px solid $color-background;
@@ -41,7 +43,7 @@
     width: 80%;
     background-color: $color-background;
     transform: scale(1);
-    transition: transform 400ms;
+    transition: transform 400ms ease-in-out;
 }
 @mixin  list {
     background-color: $color-white;
@@ -52,4 +54,5 @@
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15 );
     padding: 10px;
     margin-bottom: 15px;
+    animation: progress-bar 1000ms;
 }

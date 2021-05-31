@@ -1,3 +1,4 @@
+
 .container{
     background-color: $color-background;
     padding: 10px;
@@ -7,7 +8,6 @@
         color: $color-black;
     
     }
-  
     .proj-prev{
        @media (max-width: 599px) {
 
@@ -36,10 +36,11 @@
                 font-size: $size;
                 display: flex;
                 justify-content: flex-end;
-                margin: auto;
+                margin: auto ;
+                margin-top: -10px;
                 font-weight: 400;
                 
-                &:hover{
+                &:active{
                     color: $color-primary;
                     font-weight: 900;
                 }

@@ -1,0 +1,39 @@
+    
+    @keyframes progress-bar{
+        0% {
+            transform: scaleY(0);
+            opacity: .1;
+        }
+        17% {
+            transform: scaleY(.18);
+        }
+        24% {
+            transform: scaleY(.4);
+        }
+        50% {
+            transform: scaleY(.81);
+        }
+        100% {
+            transform: scaleY(1);
+        }
+    }
+ @keyframes rotate-btn {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+ }
