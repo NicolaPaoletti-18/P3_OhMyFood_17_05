@@ -19,5 +19,8 @@ $font-size: 15px;
 $font-size2:13px;
 $font-size3:19px;
 $font-size-heading: 25px;
-$size: 25px
+$size: 25px;
 
+$bar-dur: 1000ms;
+$bar-delay: 150ms;
+$block-pages: $bar-dur+$bar-delay*2;

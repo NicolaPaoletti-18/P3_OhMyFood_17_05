@@ -1,5 +1,12 @@
-.block_page{
+.block_page-1{
+    padding: 0;
     font-family: $font-primary;
     color: $color-black;
     font-size: $font-size;
-}
+    animation: block-pages 1ms $block-pages both cubic-bezier(.9,0,.1,1);}
+    
+    .block_page{
+        font-family: $font-primary;
+        color: $color-black;
+        font-size: $font-size;
+    }
