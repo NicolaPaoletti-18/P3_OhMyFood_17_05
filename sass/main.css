@@ -9,7 +9,7 @@
   0% {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
-    opacity: 0;
+    opacity: 0.2;
   }
   10% {
     -webkit-transform: scaleY(0.1);
@@ -42,7 +42,7 @@
   0% {
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
-    opacity: 0;
+    opacity: 0.2;
   }
   10% {
     -webkit-transform: scaleY(0.1);
@@ -135,20 +135,12 @@
     -webkit-transform: scaleX(0.2);
             transform: scaleX(0.2);
   }
-  20% {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
-  }
-  45% {
-    -webkit-transform: scaleX(0.61);
-            transform: scaleX(0.61);
-  }
   60% {
     -webkit-transform: scaleX(0.8);
             transform: scaleX(0.8);
   }
   90% {
-    opacity: 1;
+    opacity: 4;
   }
   100% {
     -webkit-transform: scaleX(1);
@@ -166,20 +158,12 @@
     -webkit-transform: scaleX(0.2);
             transform: scaleX(0.2);
   }
-  20% {
-    -webkit-transform: scaleX(0.4);
-            transform: scaleX(0.4);
-  }
-  45% {
-    -webkit-transform: scaleX(0.61);
-            transform: scaleX(0.61);
-  }
   60% {
     -webkit-transform: scaleX(0.8);
             transform: scaleX(0.8);
   }
   90% {
-    opacity: 1;
+    opacity: 4;
   }
   100% {
     -webkit-transform: scaleX(1);

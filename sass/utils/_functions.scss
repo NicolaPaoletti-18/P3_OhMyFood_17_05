@@ -3,7 +3,7 @@
         0% {
             
             transform: scaleY(0);
-            opacity: 0;
+            opacity: 0.2;
         }
         10%{
             transform: scaleY(0.1);
@@ -63,17 +63,12 @@
     10% {
         transform: scaleX(.2);
     }
-    20% {
-        transform: scaleX(.4);
-    }
-    45% {
-        transform: scaleX(.61);
-    }
+   
     60%{
         transform: scaleX(.8);
     }
     90% {
-        opacity:1;
+        opacity:4;
     }
     100% {
         transform: scaleX(1) ;
