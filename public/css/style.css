@@ -297,7 +297,7 @@
 }
 
 .chargament {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   position: static;
@@ -309,9 +309,6 @@
   position: absolute;
   transform: scaleX(1);
   transform-origin: top;
-}
-.chargament__bar {
-  margin-top: 100px;
 }
 .chargament__bar > .img {
   width: 150px;

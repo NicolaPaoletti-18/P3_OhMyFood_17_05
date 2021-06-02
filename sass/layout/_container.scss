@@ -1,6 +1,6 @@
 
 .chargament{
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: flex;
     position: static;
@@ -13,7 +13,7 @@
     transform: scaleX(1);
     transform-origin: top;
      &__bar{
-       margin-top: 100px;
+      
      &>.img{
       width: 150px;
       margin: auto;
