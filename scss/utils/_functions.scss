@@ -57,34 +57,29 @@
  @keyframes chargament{
     0% {
         transform: scaleX(0) ;
+        opacity: 0;
        
     }
-    17% {
-        transform: scaleX(.18);
+    10% {
+        transform: scaleX(.2);
     }
-    24% {
+    20% {
         transform: scaleX(.4);
     }
-    46% {
-        transform: scaleX(.81);
+    45% {
+        transform: scaleX(.61);
+    }
+    60%{
+        transform: scaleX(.8);
     }
     90% {
-        opacity: 1;
+        opacity:1;
     }
     100% {
         transform: scaleX(1) ;
-       
-        
     }
 }
-@keyframes position {
-    0% {
-        transform: translateX(0px);
-    }
-    100% {
-        transform: translateX(-9999px);
-        }
-}
+
 @keyframes block-pages {
     0% {
         transform: translateX(-9999px);

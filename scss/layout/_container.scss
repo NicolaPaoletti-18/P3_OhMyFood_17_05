@@ -1,20 +1,19 @@
 
 .chargament{
+    width: 100%;
+    height: 100%;
     display: flex;
     position: static;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding: .1rem;
-    animation: chargament $bar-dur $bar-delay both;
-    position: relative;
+    animation: chargament $bar-dur $bar-delay both cubic-bezier(.9,0,.1,1);
+    position: absolute;
     transform: scaleX(1);
-    transform-origin: left;
-    z-index: 10;
+    transform-origin: top;
      &__bar{
-        animation: chargament $bar-dur $bar-delay both;
-        transform-origin: left;
-        transform: scaleX(0.5);
+       
      &>.img{
       width: 120px;
       margin: auto;
