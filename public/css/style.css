@@ -310,8 +310,11 @@
   transform: scaleX(1);
   transform-origin: top;
 }
+.chargament__bar {
+  margin-top: 100px;
+}
 .chargament__bar > .img {
-  width: 200px;
+  width: 150px;
   margin: auto;
 }
 
