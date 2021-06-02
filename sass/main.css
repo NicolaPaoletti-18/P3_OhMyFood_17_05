@@ -607,6 +607,7 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+    font-weight: 900;
     margin-top: -20px;
   }
 }

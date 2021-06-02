@@ -15,7 +15,7 @@
      &__bar{
        
      &>.img{
-      width: 120px;
+      width: 200px;
       margin: auto;
      }
 
@@ -99,6 +99,7 @@
             &--span{
                 display: flex;
                 justify-content: flex-end;
+                font-weight: 900;
                 margin-top: -20px;
               }
             }
