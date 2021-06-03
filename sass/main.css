@@ -7,53 +7,33 @@
 
 @-webkit-keyframes progress-bar {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    opacity: 0;
+    -webkit-transform: translate(-9999px);
+            transform: translate(-9999px);
+    opacity: 4;
   }
-  10% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    opacity: 0.1;
-  }
-  20% {
-    -webkit-transform: scaleY(0.6);
-            transform: scaleY(0.6);
-    opacity: 0.2;
-  }
-  40% {
-    -webkit-transform: scaleY(0.8);
-            transform: scaleY(0.8);
+  50% {
+    opacity: 2;
   }
   100% {
-    -webkit-transform: traslate(1);
-            transform: traslate(1);
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 0;
   }
 }
 
 @keyframes progress-bar {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    opacity: 0;
+    -webkit-transform: translate(-9999px);
+            transform: translate(-9999px);
+    opacity: 4;
   }
-  10% {
-    -webkit-transform: scaleY(0.4);
-            transform: scaleY(0.4);
-    opacity: 0.1;
-  }
-  20% {
-    -webkit-transform: scaleY(0.6);
-            transform: scaleY(0.6);
-    opacity: 0.2;
-  }
-  40% {
-    -webkit-transform: scaleY(0.8);
-            transform: scaleY(0.8);
+  50% {
+    opacity: 2;
   }
   100% {
-    -webkit-transform: traslate(1);
-            transform: traslate(1);
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 0;
   }
 }
 
@@ -685,8 +665,36 @@
             box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.15);
     padding: 10px;
     margin-bottom: 15px;
-    -webkit-animation: progress-bar 1 1000ms ease-in-out transform-origin top;
-            animation: progress-bar 1 1000ms ease-in-out transform-origin top;
+  }
+  .section__list__link:nth-child(1) {
+    -webkit-animation: progress-bar 1 5000ms linear;
+            animation: progress-bar 1 5000ms linear;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  .section__list__link:nth-child(2) {
+    -webkit-animation: progress-bar 1 1000ms linear;
+            animation: progress-bar 1 1000ms linear;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  .section__list__link:nth-child(3) {
+    -webkit-animation: progress-bar 1 2000ms  linear;
+            animation: progress-bar 1 2000ms  linear;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  .section__list__link:nth-child(4) {
+    -webkit-animation: progress-bar 1 3000ms linear;
+            animation: progress-bar 1 3000ms linear;
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  .section__list__link:nth-child(5) {
+    -webkit-animation: progress-bar 1 4000ms linear;
+            animation: progress-bar 1 4000ms linear;
+    -webkit-transform-origin: top;
+            transform-origin: top;
   }
   .section__list__link > a {
     text-decoration: none;

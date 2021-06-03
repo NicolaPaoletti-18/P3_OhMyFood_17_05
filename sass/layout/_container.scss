@@ -120,8 +120,28 @@
             }
             &__link{
             @include list;
-            animation: progress-bar 1 1000ms ease-in-out
-            transform-origin top;
+            &:nth-child(1) {
+                animation: progress-bar 1 5000ms linear;
+                transform-origin: top
+              }
+            &:nth-child(2) {
+                animation: progress-bar 1 1000ms linear;
+                transform-origin: top;
+              }
+            &:nth-child(3) {
+                animation: progress-bar 1 2000ms  linear;
+                transform-origin: top;
+            }
+            &:nth-child(4){
+                animation: progress-bar 1 3000ms linear;
+                transform-origin:top;
+              }
+            &:nth-child(5){
+                animation: progress-bar 1 4000ms linear;
+                transform-origin: top;
+              }
+            
+            
             
              > a{
                     text-decoration: none;
@@ -142,4 +162,4 @@
 
         }
     }
-}
+ }
