@@ -12,15 +12,49 @@
     position: absolute;
     transform: scaleX(1);
     transform-origin: top;
-     &__bar{
-      
-     &>.img{
-      width: 150px;
-      margin: auto;
+    top: 0;
+    left: 30px;
+    right: 0;
+    bottom: 0;
+    &__img{
+      width: 80%;
+    }
+        &>.lds-ellipsis {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 80px;
+          }
+         &>.lds-ellipsis div {
+            position: absolute;
+            top: 33px;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: linear-gradient($color-secondary, $color-primary 90%);
+            animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          }
+          &>.lds-ellipsis div:nth-child(1) {
+            left: 8px;
+            animation: lds-ellipsis1 0.6s infinite;
+          }
+          &>.lds-ellipsis div:nth-child(2) {
+            left: 8px;
+            animation: lds-ellipsis2 0.6s infinite;
+          }
+          &>.lds-ellipsis div:nth-child(3) {
+            left: 32px;
+            animation: lds-ellipsis2 0.6s infinite;
+          }
+         &>.lds-ellipsis div:nth-child(4) {
+            left: 56px;
+            animation: lds-ellipsis3 0.6s infinite;
+          }
      }
 
-    }
-}
+    
+
+
 
 
 .container{
@@ -79,31 +113,33 @@
     @media (max-width: 599px){
         &__list{
             padding: 0px;
-            animation: progress-bar 1 1000ms ease-in-out;
-            transform-origin: 50% top;
             &__heading{
                 margin-left: 10px;
-                border-bottom: 2px solid $color-tertiary;
+                border-bottom: 2px solid $color-tertiary; 
                 width: 9%;
             }
             &__link{
             @include list;
-                > a{
+            animation: progress-bar 1 1000ms ease-in-out
+            transform-origin top;
+            
+             > a{
                     text-decoration: none;
                     color: $color-black;
-                }
+            }   
             &-type{
                 margin: 0px;
                 font-size: $font-size;
-            
+           
             &--span{
                 display: flex;
                 justify-content: flex-end;
                 font-weight: 900;
                 margin-top: -20px;
               }
-            }
+             } 
          }
+
         }
     }
 }
