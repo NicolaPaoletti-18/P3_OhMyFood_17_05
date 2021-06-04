@@ -2,15 +2,19 @@
     @keyframes progress-bar{
         0% {
             transform: translate(-9999px) ;
-            opacity: 4;
+            opacity: 3;
            
         }
+        25%{
+            opacity: 0;
+            transform: scaleY(0.5);
+        }
         50%{
-            opacity: 2;
+          
+            transform: scaleY(1);
         }
         100% {
             transform: translate(0);
-            opacity: 0;
         }
     }
  @keyframes rotate-btn {

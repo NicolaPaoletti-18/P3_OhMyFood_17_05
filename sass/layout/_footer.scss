@@ -1,7 +1,7 @@
 .footer{
     background-color: $color-black;
     @media (max-width:599px){
-        &__heading{
+        &__ul__heading{
             width: 30%;  
             margin-top: 10px; 
             filter:  invert(100%);
