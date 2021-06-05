@@ -52,6 +52,43 @@
     
     }
     .proj-prev{
+      @include cards;
+      &:hover{
+          transform: scale(1.05);
+      }
+      &__a{
+          text-decoration: none;
+      }
+      &__img{
+          object-fit: cover;
+          width: 100%;
+          height: 150px;
+          border-radius: $size $size 0px 0px;
+      }
+      &__txt{
+          width: 90%;
+          height: 60px;
+          margin: 10px;
+          color: $color-black;
+          .p{
+              margin-top: -15px;
+          }
+          .fa-heart{
+              font-size: $size;
+              display: flex;
+              justify-content: flex-end;
+              margin: auto ;
+              margin-top: -10px;
+              font-weight: 400;
+              
+              &:active{
+                  color: $color-primary;
+                  font-weight: 900;
+              }
+          }
+          
+      }
+  
        @media (max-width: 599px) {
 
        @include cards;
@@ -95,6 +132,61 @@
 }
 .section{
     background-color: $color-background;
+    padding-bottom: 25px;
+    &__list{
+      padding: 0px;
+      &__heading{
+          margin-left: 10px;
+          border-bottom: 2px solid $color-tertiary; 
+          width: 9%;
+      }
+      &__link{
+      @include list;
+    /*  &:hover{
+        
+        box-shadow: -15vw 0 0 $color-tertiary inset;
+        
+      }*/
+      &:nth-child(2) {
+          animation: progress-bar 1 1500ms linear;
+          transform-origin: bottom;
+        }
+      &:nth-child(3) {
+          animation: progress-bar 1 2000ms  linear;
+          transform-origin: bottom;
+      }
+      &:nth-child(4){
+          animation: progress-bar 1 3000ms linear;
+          transform-origin:bottom;
+        }
+      &:nth-child(5){
+          animation: progress-bar 1 4000ms linear;
+          transform-origin: bottom;
+       }
+       > a{
+              text-decoration: none;
+              color: $color-black;
+        
+      }   
+      &-type{
+          margin: 0px;
+          font-size: $font-size;
+     
+      &--span{
+          display: flex;
+          justify-content: flex-end;
+          font-weight: 900;
+          margin-top: -20px;
+          >.fa-check-circle{
+            display: none;
+            font-weight: 400;
+            border: 1px solid ;
+            position: relative;
+          }
+        }
+       } 
+   }
+  }
     @media (max-width: 599px){
         &__list{
             padding: 0px;
