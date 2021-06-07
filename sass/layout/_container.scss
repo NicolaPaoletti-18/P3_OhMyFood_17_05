@@ -73,14 +73,16 @@
           .p{
               margin-top: -15px;
           }
-          .fa-heart{
-              font-size: $size;
-              display: flex;
-              justify-content: flex-end;
-              margin: auto ;
-              margin-top: -10px;
-              font-weight: 400;
-              
+          .heart{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .fa-heart{
+            font-size: $size;
+            margin:0 ;
+            margin-top: -10px;
+            font-weight: 400;
               &:active{
                   color: $color-primary;
                   font-weight: 900;
@@ -112,22 +114,29 @@
             .p{
                 margin-top: -15px;
             }
+            .heart{
+                width: 100%;
+                justify-content: flex-end;
+                display: flex;
+            }
             .fa-heart{
                 font-size: $size;
-                display: flex;
-                justify-content: flex-end;
-                margin: auto ;
+                margin:0 ;
                 margin-top: -10px;
                 font-weight: 400;
                 
-                &:active{
-                    color: $color-primary;
+                &:hover{
+                    transition: all 0 ease-in-out;
                     font-weight: 900;
+                    background-clip: text;
+                    background-image: linear-gradient($color-primary, $color-secondary);
+                   -webkit-text-fill-color: transparent;
                 }
             }
             
         }
     }
+    @media (min-width: 600px) and (max-width: 1199px){}
   }
 }
 .section{
@@ -142,11 +151,23 @@
       }
       &__link{
       @include list;
-    /*  &:hover{
-        
-        box-shadow: -15vw 0 0 $color-tertiary inset;
-        
-      }*/
+      &:hover{
+         .hover{
+           width: 30%;
+           height: 40px;
+           display: flex;
+           justify-content: center;
+           animation: list_hover-out 1 2000ms ease-in-out;
+           background-color: $color-tertiary;
+        .fa-check-circle{
+          animation: spin 1 1000ms 400ms ease-in-out;
+          font-size: 20px;
+         /* color: $color-white; */
+          font-weight: 100;
+          display: block;
+    }
+  }
+    }
       &:nth-child(2) {
           animation: progress-bar 1 1500ms linear;
           transform-origin: bottom;
@@ -177,59 +198,63 @@
           justify-content: flex-end;
           font-weight: 900;
           margin-top: -20px;
-          >.fa-check-circle{
+          > .hover{
+            margin-top: -20px;
+          .fa-check-circle{
+            font-size: 20px;
+            margin-top: 10px;
             display: none;
-            font-weight: 400;
-            border: 1px solid ;
-            position: relative;
+          }
           }
         }
        } 
    }
   }
+    @media (min-width: 600px) and (max-width: 1199px){}
     @media (max-width: 599px){
-        &__list{
-            padding: 0px;
-            &__heading{
-                margin-left: 10px;
-                border-bottom: 2px solid $color-tertiary; 
-                width: 9%;
+      &__list{
+          padding: 0px;
+          &__heading{
+              margin-left: 10px;
+              border-bottom: 2px solid $color-tertiary; 
+              width: 9%;
+          }
+          &__link{
+          @include list;
+          &:nth-child(2) {
+              animation: progress-bar 1 1500ms linear;
+              transform-origin: bottom;
             }
-            &__link{
-            @include list;
-            &:nth-child(2) {
-                animation: progress-bar 1 1500ms linear;
-                transform-origin: bottom;
-              }
-            &:nth-child(3) {
-                animation: progress-bar 1 2000ms  linear;
-                transform-origin: bottom;
+          &:nth-child(3) {
+              animation: progress-bar 1 2000ms  linear;
+              transform-origin: bottom;
+          }
+          &:nth-child(4){
+              animation: progress-bar 1 3000ms linear;
+              transform-origin:bottom;
             }
-            &:nth-child(4){
-                animation: progress-bar 1 3000ms linear;
-                transform-origin:bottom;
-              }
-            &:nth-child(5){
-                animation: progress-bar 1 4000ms linear;
-                transform-origin: bottom;
-             }
-             > a{
-                    text-decoration: none;
-                    color: $color-black;
-            }   
-            &-type{
-                margin: 0px;
-                font-size: $font-size;
-           
-            &--span{
-                display: flex;
-                justify-content: flex-end;
-                font-weight: 900;
-                margin-top: -20px;
-              }
-             } 
-         }
+          &:nth-child(5){
+              animation: progress-bar 1 4000ms linear;
+              transform-origin: bottom;
+           }
+           > a{
+                  text-decoration: none;
+                  color: $color-black;
+          }   
+          &-type{
+              margin: 0px;
+              font-size: $font-size;
+         
+          &--span{
+              display: flex;
+              justify-content: flex-end;
+              font-weight: 900;
+              margin-top: -20px;
+            }
+           } 
+       }
 
-        }
-    }
- }
+      }
+  }
+}
+

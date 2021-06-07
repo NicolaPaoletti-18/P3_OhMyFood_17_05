@@ -1,15 +1,14 @@
 .nav{
-  
+    &__h3{
+        font-size: $font-size-heading;
+        margin-left: 12px;
+    }
     &__ul{
         width: 100%;
         padding: 0px;
         list-style: none;
         margin-top: 20px;
         background-color: $color-white;
-        &__h3{
-            font-size: $font-size-heading;
-            margin-left: 12px;
-        }
          &__link{
           @include nav-1;
           &:hover{
@@ -45,17 +44,18 @@
           }
          }
      }
+    @media (min-width: 600px) and (max-width: 1199px){}
     @media (max-width: 599px) {
+    &__h3{
+            font-size: $font-size-heading;
+            margin-left: 12px;
+        }
     &__ul{
        width: 100%;
        padding: 0px;
        list-style: none;
        margin-top: 20px;
        background-color: $color-white;
-       &__h3{
-           font-size: $font-size-heading;
-           margin-left: 12px;
-       }
         &__link{
          @include nav-1;
          &:hover{

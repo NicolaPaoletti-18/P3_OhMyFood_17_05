@@ -1,7 +1,8 @@
 .footer{
     background-color: $color-black;
-    &__ul__heading{
-        width: 30%;  
+    &__heading{
+        width: 30%;
+        margin-left: 40px;  
         margin-top:  10px;
         filter:  invert(100%);
     }
@@ -16,9 +17,11 @@
     }
     }
 }
+@media (min-width: 600px) and (max-width: 1199px){}
     @media (max-width:599px){
-        &__ul__heading{
-            width: 30%;  
+        &__heading{
+            width: 30%; 
+            margin-left: 40px;   
             margin-top:  10px;
             filter:  invert(100%);
         }

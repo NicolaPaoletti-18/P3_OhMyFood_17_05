@@ -3,11 +3,12 @@
     &:hover{
         transform: scale(1.05);
     }
-    &-a{
+    >a{
         color: white;
         text-decoration: none;
         font-family: $font-primary;
     }
+    @media (min-width: 600px) and (max-width: 1199px){}
     @media (max-width:599px){
        @include btn-1;
         &:hover{
@@ -22,6 +23,7 @@
     }
 .proj-prev__btn-vert{
     @include btn-vert;
+    @media (min-width: 600px) and (max-width: 1199px){}
     @media (max-width:599px){
     @include btn-vert;
     
@@ -37,6 +39,7 @@
         text-decoration: none;
         font-family: $font-primary;
     }
+    @media (min-width: 600px) and (max-width: 1199px){}
     @media (max-width:599px){
         @include btn-1;
         &:hover{
