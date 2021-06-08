@@ -1,5 +1,5 @@
 .header--nav__btn-explorer{
-    @include btn-1;
+    @include btn-1-1200px;
     &:hover{
         transform: scale(1.05);
     }
@@ -22,7 +22,7 @@
         }
     }
 .proj-prev__btn-vert{
-    @include btn-vert;
+    @include btn-vert-1200px;
     @media (min-width: 600px) and (max-width: 1199px){}
     @media (max-width:599px){
     @include btn-vert;
@@ -30,7 +30,7 @@
     }
 }
 .section__btn-commander{
-    @include btn-1;
+    @include btn-1-1200px;
     &:hover{
         transform: scale(1.05);
     }

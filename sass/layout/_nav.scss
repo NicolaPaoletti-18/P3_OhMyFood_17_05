@@ -6,11 +6,12 @@
     &__ul{
         width: 100%;
         padding: 0px;
+        display: flex;
         list-style: none;
         margin-top: 20px;
         background-color: $color-white;
          &__link{
-          @include nav-1;
+          @include nav-1-1200px;
           &:hover{
               background-color: #d6f2fbb5;
               transform: scale(1.05);
@@ -35,9 +36,9 @@
                  font-size: $font-size3;
                  background-color: $color-primary;
                  &__strong{
-                     margin-left: 15%;
+                     margin-left: 10%;
                      color: $color-black;
-                     font-size: $font-size;
+                     font-size: $font-size3;
                  }
                 
               }

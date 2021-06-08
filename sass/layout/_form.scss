@@ -2,15 +2,18 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 30px;
+    height: 50px;
     background: #97939740;
-    box-shadow: inset 0px 6px 6px #13121224;;
+    box-shadow: inset 0px 6px 6px #13121224;
+
     .nav_search{
      border: 0px;
      background: #fdfdfd00;
+     font-size: $font-size3;
+     font-family: $font-primary;
     }
     .fa-map-marker-alt{
-        margin-top: 7px;
+        margin-top: 15px;
         margin-left: 30px;
     }
 @media (min-width: 600px) and (max-width: 1199px){}
@@ -21,10 +24,13 @@
    justify-content: center;
    height: 30px;
    background: #97939740;
-   box-shadow: inset 0px 6px 6px #13121224;;
+   box-shadow: inset 0px 6px 6px #13121224;
+
    .nav_search{
     border: 0px;
     background: #fdfdfd00;
+    font-size: $font-size;
+    font-family: $font-primary;
    }
    .fa-map-marker-alt{
        margin-top: 7px;

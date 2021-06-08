@@ -3,13 +3,30 @@
     position: relative;
     font-family: $font-primary;
     color: $color-black;
+    font-size: $font-size3;
+    background-color: $color-white;
+    animation: block-pages 1ms $block-pages both cubic-bezier(.9,0,.1,1);
+
+    @media (max-width:599px){
+    padding: 0;
+    position: relative;
+    font-family: $font-primary;
+    color: $color-black;
     font-size: $font-size;
     background-color: $color-white;
     animation: block-pages 1ms $block-pages both cubic-bezier(.9,0,.1,1);}
-    
+}    
     .block_page{
+
+        font-family: $font-primary;
+        color: $color-black;
+        font-size: $font-size3;
+        background-color: $color-white;
+
+        @media (max-width:599px){
         font-family: $font-primary;
         color: $color-black;
         font-size: $font-size;
         background-color: $color-white;
+    }
     }

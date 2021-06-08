@@ -36,10 +36,38 @@
     transition: transform 400ms ease-in-out;
     animation: rotate-btn 5s 3 ease-in-out;
 }
+@mixin btn-1-1200px {
+    border: 1px solid white;
+    width: 50%;
+    font-size: $font-size3;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 15px;
+    background: linear-gradient($color-secondary, $color-primary 90%);
+    @include box-shadow;
+    transform: scale(1);
+    transition: transform 400ms ease-in-out;
+    animation: rotate-btn 5s 3 ease-in-out;
+}
 @mixin btn-vert {
     width: 20%;
     margin:10px;
-    margin-left: 220px;
+    margin-left: 260px;
+    display: flex;
+    position: absolute;
+    background-color: $color-tertiary;
+    justify-content:center;
+    color:darken($color-tertiary, $amount: 50%);
+}
+@mixin btn-vert-1200px {
+    width: 20%;
+    margin:10px;
+    margin-left: 460px;
     display: flex;
     position: absolute;
     background-color: $color-tertiary;
@@ -57,6 +85,16 @@
         transform: scale(1);
         transition: transform 400ms ease-in-out;
 }
+@mixin cards-1200px {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    @include box-shadow;
+    border-radius: $size $size;
+    background-color: $color-white;
+    transform: scale(1);
+    transition: transform 400ms ease-in-out;
+}
 @mixin nav-1 {
     border: 1px solid $color-background;
     @include box-shadow;
@@ -69,10 +107,32 @@
     transform: scale(1);
     transition: transform 400ms ease-in-out;
 }
+@mixin nav-1-1200px {
+    border: 1px solid $color-background;
+    @include box-shadow;
+    border-radius: $size;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 30%;
+    background-color: $color-background;
+    transform: scale(1);
+    transition: transform 400ms ease-in-out;
+}
 
 @mixin  list {
     background-color: $color-white;
     width: 90%;
+    margin: auto;
+    display: inherit;
+    border-radius: $size;
+    @include box-shadow;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+@mixin list-1200px {
+    background-color: $color-white;
+    width: 50%;
     margin: auto;
     display: inherit;
     border-radius: $size;

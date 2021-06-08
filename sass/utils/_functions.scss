@@ -40,11 +40,12 @@
  @keyframes chargament{
     0% {
         transform: scaleX(0) ;
-        opacity: 0;
+        opacity: 4;
        
     }
     10% {
         transform: scaleX(.4);
+        opacity: 2;
     }
    
     60%{

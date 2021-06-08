@@ -3,6 +3,7 @@
     @include chargament;
     &__img{
       width: 80%;
+      object-fit: cover;
     }
         &>.lds-ellipsis {
             display: inline-block;
@@ -52,7 +53,7 @@
     
     }
     .proj-prev{
-      @include cards;
+      @include cards-1200px;
       &:hover{
           transform: scale(1.05);
       }
@@ -83,10 +84,13 @@
             margin:0 ;
             margin-top: -10px;
             font-weight: 400;
-              &:active{
-                  color: $color-primary;
-                  font-weight: 900;
-              }
+            &:hover{
+              transition: all 0 ease-in-out;
+              font-weight: 900;
+              background-clip: text;
+              background-image: linear-gradient($color-primary, $color-secondary);
+             -webkit-text-fill-color: transparent;
+          }
           }
           
       }
@@ -148,9 +152,10 @@
           margin-left: 10px;
           border-bottom: 2px solid $color-tertiary; 
           width: 9%;
+          display: flex;
       }
       &__link{
-      @include list;
+      @include list-1200px;
       &:hover{
          .hover{
            width: 30%;
@@ -159,14 +164,20 @@
            justify-content: center;
            animation: list_hover-out 1 2000ms ease-in-out;
            background-color: $color-tertiary;
+           border-radius: 0px 20px 20px 0px ;
         .fa-check-circle{
           animation: spin 1 1000ms 400ms ease-in-out;
           font-size: 20px;
-         /* color: $color-white; */
+          color: $color-white;
           font-weight: 100;
           display: block;
+          height: min-content;
     }
   }
+    }
+     &:nth-child(1) {
+      animation: progress-bar 1 1000ms linear;
+      transform-origin: bottom;
     }
       &:nth-child(2) {
           animation: progress-bar 1 1500ms linear;
@@ -191,7 +202,7 @@
       }   
       &-type{
           margin: 0px;
-          font-size: $font-size;
+          font-size: $font-size3;
      
       &--span{
           display: flex;
