@@ -146,14 +146,14 @@
 .section{
     background-color: $color-background;
     padding-bottom: 25px;
+    &__heading{
+      margin-left: 10px;
+      border-bottom: 2px solid $color-tertiary; 
+      width: 9%;
+      display: flex;
+    }
     &__list{
       padding: 0px;
-      &__heading{
-          margin-left: 10px;
-          border-bottom: 2px solid $color-tertiary; 
-          width: 9%;
-          display: flex;
-      }
       &__link{
       @include list-1200px;
       &:hover{
