@@ -655,7 +655,7 @@
   transform: scaleX(1);
   transform-origin: top;
   top: 0;
-  left: 30px;
+  left: 17px;
   right: 0;
   bottom: 0;
 }
@@ -871,6 +871,7 @@
 }
 .section__list__link-type {
   margin: 0px;
+  margin-bottom: 5px;
   font-size: 20px;
 }
 .section__list__link-type--span {
@@ -944,7 +945,7 @@
   justify-content: center;
   height: 50px;
   background: #97939740;
-  box-shadow: inset 0px 6px 6px #13121224;
+  box-shadow: inset 0px 3px 2px #1312123d;
 }
 .form .nav_search {
   border: 0px;
