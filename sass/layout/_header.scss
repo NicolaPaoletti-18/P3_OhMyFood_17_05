@@ -27,8 +27,8 @@
             display: flex;
             >a{
                 .fa-arrow-left{
-                    font-size: 20px;
-                    margin-left: 20px;
+                    font-size: $font-size-1200px;
+                    margin-left: 5px;
                     padding-bottom: 10px;
                     color: $color-black;
                 }
@@ -129,7 +129,6 @@
     }
   } 
   .header{
-    
         &__logo{
             display: flex;
         }
@@ -142,7 +141,7 @@
                 display: flex;
                 justify-content: space-around;
                 width: 98.8%;
-                height: 60px;
+                height: 75px;
                 position: absolute;
                 margin-top: -50px;
                 padding-top: 16px;
@@ -151,8 +150,8 @@
                 >.fa-heart{
                     font-weight: 400;
                     &:hover{
-                        transition: all 0 ease-in-out;
                         font-weight: 900;
+                        -webkit-background-clip: text;
                         background-clip: text;
                         background-image: linear-gradient($color-primary, $color-secondary);
                        -webkit-text-fill-color: transparent;

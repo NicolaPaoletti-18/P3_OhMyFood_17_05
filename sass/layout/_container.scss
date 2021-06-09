@@ -38,19 +38,45 @@
           }
      }
 
-    
-
-
-
-
 .container{
     background-color: $color-background;
     padding: 10px;
     &__heading{
-        font-size: $font-size-heading;
-        font-family: $font-primary;
-        color: $color-black;
-    
+      font-size: $font-size-heading-1200px;
+      font-family: $font-primary;
+      color: $color-black;
+     @media (max-width:599){
+       font-size: $font-size-heading;
+       font-family: $font-primary;
+       color: $color-black;
+     }
+
+    }
+    @media (max-width: 599px){
+      .block-1{
+        display: inline-block;
+        width: 100%;
+      }
+      .block-2{
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    .block-1{
+      display: flex;
+      width: 100%;
+      @media (max-width: 599px){
+          display: inline-block;
+          width: 100%;
+      }
+    }
+    .block-2{
+      display: flex;
+      width: 100%;
+      @media (max-width: 599px){
+          display: inline-block;
+          width: 100%;
+      }
     }
     .proj-prev{
       @include cards-1200px;
@@ -80,7 +106,7 @@
             justify-content: flex-end;
         }
         .fa-heart{
-            font-size: $size;
+            font-size: $font-size-1200px;
             margin:0 ;
             margin-top: -10px;
             font-weight: 400;
@@ -96,8 +122,14 @@
       }
   
        @media (max-width: 599px) {
+        .block-1{
+          display: none;
+        }
+        .block-2{
+         display: none
+        }
+        @include cards;
 
-       @include cards;
         &:hover{
             transform: scale(1.05);
         }
@@ -139,7 +171,8 @@
             }
             
         }
-    }
+        
+      }
     @media (min-width: 600px) and (max-width: 1199px){}
   }
 }
@@ -147,10 +180,11 @@
     background-color: $color-background;
     padding-bottom: 25px;
     &__heading{
-      margin-left: 10px;
+      margin-left: 50px;
       border-bottom: 2px solid $color-tertiary; 
-      width: 9%;
+      width: 5%;
       display: flex;
+      font-size: $font-size-1200px;
     }
     &__list{
       padding: 0px;

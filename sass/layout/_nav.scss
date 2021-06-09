@@ -1,12 +1,13 @@
 .nav{
     &__h3{
-        font-size: $font-size-heading;
+        font-size: $font-size-heading-1200px;
         margin-left: 12px;
     }
     &__ul{
         width: 100%;
         padding: 0px;
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
         margin-top: 20px;
         background-color: $color-white;
@@ -22,7 +23,7 @@
           &--a{
              text-decoration: none;
              &>.fas{
-                 margin-left: 30px;
+                 margin-left: 20px;
                  font-size: $font-size3;
                  color: rgb(216, 213, 213);
                 
@@ -36,7 +37,7 @@
                  font-size: $font-size3;
                  background-color: $color-primary;
                  &__strong{
-                     margin-left: 10%;
+                     margin-left: 5%;
                      color: $color-black;
                      font-size: $font-size3;
                  }
