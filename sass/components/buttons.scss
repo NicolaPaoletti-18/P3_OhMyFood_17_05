@@ -8,7 +8,18 @@
         text-decoration: none;
         font-family: $font-primary;
     }
-    @media (min-width: 600px) and (max-width: 1199px){}
+    @media (min-width: 600px) and (max-width: 1199px){
+    @include btn-1-tablette;
+    text-align: center;
+    &:hover{
+        transform: scale(1.05);
+    }
+    >a{
+        color: white;
+        text-decoration: none;
+        font-family: $font-primary;
+        }
+    }
     @media (max-width:599px){
        @include btn-1;
         &:hover{
@@ -29,7 +40,15 @@
      @include btn-vert-1200px;
     }
     
-    @media (min-width: 600px) and (max-width: 1199px){}
+    @media (min-width: 600px) and (max-width: 1199px){
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        >span{
+         @include btn-vert-1200px;
+         width: 27%;
+        }
+    }
 
     @media (max-width:599px){
     width: 100%;
