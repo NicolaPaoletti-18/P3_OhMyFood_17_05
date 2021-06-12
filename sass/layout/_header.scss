@@ -226,7 +226,6 @@
                 >.fa-heart{
                     font-weight: 400;
                     &:hover{
-                        transition: all 0 ease-in-out;
                         font-weight: 900;
                         background-clip: text;
                         background-image: linear-gradient($color-primary, $color-secondary);
