@@ -178,18 +178,43 @@
       padding: 0px;
       &__link{
       @include list-1200px;
+      padding: 0px;
       overflow: hidden;
+      .animation {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -18px;
       .hover{
         position: relative;
-        right: -13px;
-      
+        right: -25px;
       }
+    }
       &:hover{
+        .container-txt{
+          > p{
+            margin: 0px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; 
+            width: 70%;
+            }
+          }
+        .section__list__link-type{
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; 
+          width: 62%;
+        }
+        .section__list__link-type--span{
+          transition: 2.3s;
+          margin-right: 26%;
+        }
          .hover{
            width: 30%;
-           height: 52px;
+           height: 64px;
            margin-right: -13px;
            margin-left: 0px;
+           margin-top: -37px;
            display: flex;
            justify-content: center;
            animation: list_hover-out 1 2000ms ease-in-out;
@@ -197,7 +222,8 @@
            border-radius: 0px 20px 20px 0px ;
         .fa-check-circle{
           animation: spin 1 1000ms 0ms ease-in-out;
-          margin-top: 12px;
+          margin-top: 18px;
+          margin-left: -22px;
           font-size: 30px;
           color: $color-white;
           font-weight: 100;
@@ -233,15 +259,25 @@
       }   
       .container-txt{
         padding: 5px;
-        width: 72%;
+        width: 100%;
+        cursor: pointer;
       > p{
         margin: 0px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; 
+        width: 70%;
         }
       }
       &-type{
           margin: 0px;
           margin-bottom: 5px;
           font-size: $font-size3;
+          width: 70%;
+          font-size: $font-size;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
       &--span{
           display: flex;
           justify-content: flex-end;
@@ -249,7 +285,7 @@
           margin-top: -27px;
           margin-right: 10px;
           > .hover{
-            margin-top: -20px;
+            margin-top: -36px;
           .fa-check-circle{
             font-size: 20px;
             margin-top: 10px;
@@ -272,26 +308,59 @@
         padding: 0px;
         &__link{
         @include list-1200px;
-        width: 65%;
+        overflow: hidden;
+        padding: 0px;
+        .animation {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: -18px;
+        .hover{
+          position: relative;
+          right: -25px;
+          margin-top: -36px;
+        }
+      }
         &:hover{
+          .container-txt{
+            > p{
+              margin: 0px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; 
+              width: 70%;
+              }
+            }
+          .section__list__link-type{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; 
+            width: 62%;
+          }
+          .section__list__link-type--span{
+            transition: 2.3s;
+            margin-right: 23%;
+          }
            .hover{
              width: 30%;
-             height: 40px;
+             height: 62px;
+             margin-right: -13px;
+             margin-left: 0px;
              display: flex;
              justify-content: center;
              animation: list_hover-out 1 2000ms ease-in-out;
              background-color: $color-tertiary;
              border-radius: 0px 20px 20px 0px ;
           .fa-check-circle{
-            animation: spin 1 1000ms 400ms ease-in-out;
-            font-size: 20px;
+            animation: spin 1 2000ms 0ms ease-in-out;
+            margin-top: 18px;
+            font-size: 30px;
             color: $color-white;
             font-weight: 100;
             display: block;
             height: min-content;
       }
     }
-      }
+  }
        &:nth-child(1) {
         animation: progress-bar 1 1000ms linear;
         transform-origin: bottom;
@@ -321,20 +390,17 @@
             margin: 0px;
             margin-bottom: 5px;
             font-size: $font-size3;
+            width: 70%;
+            font-size: $font-size;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         &--span{
             display: flex;
             justify-content: flex-end;
             font-weight: 900;
             margin-top: -27px;
             margin-right: 10px;
-            > .hover{
-              margin-top: -20px;
-            .fa-check-circle{
-              font-size: 20px;
-              margin-top: 10px;
-              display: none;
-            }
-            }
           }
          } 
      }
@@ -353,6 +419,58 @@
           &__link{
           @include list;
           overflow: hidden;
+          .animation {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: -18px;
+ 
+          >.hover{
+            position: relative;
+            right: -25px;
+            margin-top: -30px;
+            
+          }
+        }
+          &:hover{
+            .container-txt{
+              > p{
+                margin: 0px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden; 
+                width: 70%;
+                }
+              }
+            .section__list__link-type{
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden; 
+              width: 62%;
+            }
+            .section__list__link-type--span{
+              transition: 3.3s;
+              margin-left: -23%;
+            }
+             .hover{
+               width: 30%;
+               height: 52px;
+               margin-right: -15px;
+               margin-left: 0px;
+               animation: list_hover-out 1 2000ms ease-in-out;
+               background-color: $color-tertiary;
+               border-radius: 0px 20px 20px 0px ;
+            .fa-check-circle{
+              animation: spin 1 2
+              000ms 0ms ease-in-out;
+              margin-top: 12px;
+              font-size: 30px;
+              color: $color-white;
+              font-weight: 100;
+              display: block;
+              height: min-content;
+        }
+      }
+    }
           &:nth-child(2) {
               animation: progress-bar 1 1500ms linear;
               transform-origin: bottom;
@@ -374,22 +492,32 @@
                   color: $color-black;
           } 
           .container-txt{
-            padding: 5px;
-            width: 72%;
+            padding: 6px;
+            width: 100%;
+            cursor: pointer;
           > p{
             margin: 0px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden; 
+            width: 80%;
             }
           }
           &-type{
               margin: 0px;
+              width: 70%;
               font-size: $font-size;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
          
           &--span{
+              width: 100%;
               display: flex;
               justify-content: flex-end;
               font-weight: 900;
-              margin-top: -27px;
-              margin-right: 10px;
+              margin-top: -19px;
+              margin-left: -12px;
             }
            } 
        }
