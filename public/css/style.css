@@ -988,6 +988,7 @@
     -webkit-text-fill-color: transparent;
   }
 }
+
 .section {
   background-color: #f2f2f2;
   padding-bottom: 25px;
@@ -1163,7 +1164,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 65%;
+    width: 62%;
   }
   .section__list__link:hover .section__list__link-type {
     text-overflow: ellipsis;
@@ -1187,7 +1188,7 @@
     border-radius: 0px 20px 20px 0px;
   }
   .section__list__link:hover .hover .fa-check-circle {
-    animation: spin 1 1500ms 0ms ease-in-out;
+    animation: spin 1 1200ms 0ms ease-in-out;
     margin-top: 18px;
     font-size: 30px;
     color: #fff;
@@ -1283,7 +1284,7 @@
     width: 62%;
   }
   .section__list__link:hover .section__list__link-type--span {
-    transition: 3.3s;
+    transition: 2.3s;
     margin-left: -23%;
   }
   .section__list__link:hover .hover {

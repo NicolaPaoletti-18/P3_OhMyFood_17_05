@@ -161,8 +161,8 @@
         }
         
       }
-    @media (min-width: 600px) and (max-width: 1199px){}
-  }
+
+}
 }
 .section{
     background-color: $color-background;
@@ -327,7 +327,7 @@
               text-overflow: ellipsis;
               white-space: nowrap;
               overflow: hidden; 
-              width: 65%;
+              width: 62%;
               }
             }
           .section__list__link-type{
@@ -351,7 +351,7 @@
              background-color: $color-tertiary;
              border-radius: 0px 20px 20px 0px ;
           .fa-check-circle{
-            animation: spin 1 1500ms 0ms ease-in-out;
+            animation: spin 1 1200ms 0ms ease-in-out;
             margin-top: 18px;
             font-size: 30px;
             color: $color-white;
@@ -447,7 +447,7 @@
               width: 62%;
             }
             .section__list__link-type--span{
-              transition: 3.3s;
+              transition: 2.3s;
               margin-left: -23%;
             }
              .hover{
@@ -523,4 +523,3 @@
       }
   }
 }
-
