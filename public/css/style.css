@@ -385,8 +385,10 @@
 }
 .header__h1__img {
   width: 30%;
-  height: 40px;
+  height: 20%;
   margin: auto;
+  margin-top: 10px;
+  object-fit: cover;
 }
 @media (min-width: 600px) and (max-width: 1199px) {
   .header {
@@ -426,9 +428,11 @@
     color: #000;
   }
   .header__h1__img {
-    width: 50%;
-    height: 40px;
+    width: 40%;
+    height: 10%;
     margin: auto;
+    margin-top: 10px;
+    object-fit: cover;
   }
 }
 @media (max-width: 599px) {
@@ -470,8 +474,10 @@
   }
   .header__h1__img {
     width: 50%;
-    height: 30px;
+    height: 20%;
     margin: auto;
+    margin-top: 10px;
+    object-fit: cover;
   }
 }
 
@@ -583,46 +589,64 @@
   }
 }
 
-.footer {
+footer {
   background-color: #353535;
 }
-.footer__heading {
+footer .footer {
+  width: 1200px;
+  margin: auto;
+}
+footer .footer__heading {
   width: 20%;
   margin-left: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
   filter: invert(100%);
 }
-.footer__ul {
+footer .footer__ul {
   margin: 0px;
   padding-bottom: 15px;
   list-style: none;
 }
-.footer__ul__link--a {
+footer .footer__ul__link--a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
 }
+@media (min-width: 600px) and (max-width: 1199px) {
+  footer .footer {
+    width: auto;
+    margin: auto;
+  }
+}
 @media (max-width: 599px) {
-  .footer__heading {
+  footer .footer {
+    width: auto;
+    margin: auto;
+  }
+  footer .footer__heading {
     width: 25%;
     margin-left: 40px;
     margin-bottom: 10px;
     margin-top: 10px;
     filter: invert(100%);
   }
-  .footer__ul {
+  footer .footer__ul {
     margin: 0px;
     list-style: none;
     padding-bottom: 15px;
   }
-  .footer__ul__link--a {
+  footer .footer__ul__link--a {
     text-decoration: none;
     color: #fff;
     font-size: 13px;
   }
 }
 
+.nav {
+  width: 1200px;
+  margin: auto;
+}
 .nav__h3 {
   font-size: 40px;
   margin-left: 12px;
@@ -679,6 +703,10 @@
   font-weight: 400;
 }
 @media (min-width: 600px) and (max-width: 1199px) {
+  .nav {
+    width: auto;
+    margin: auto;
+  }
   .nav__h3 {
     font-size: 40px;
     margin-left: 20px;
@@ -739,6 +767,10 @@
   }
 }
 @media (max-width: 599px) {
+  .nav {
+    width: auto;
+    margin: auto;
+  }
   .nav__h3 {
     font-size: 25px;
     margin-left: 20px;
@@ -814,7 +846,7 @@
   bottom: 0;
 }
 .chargament__img {
-  width: 80%;
+  width: 40%;
   object-fit: cover;
 }
 .chargament > .lds-ellipsis {
@@ -849,12 +881,28 @@
   animation: lds-ellipsis3 0.6s infinite;
 }
 
-.container {
+section {
   background-color: #f2f2f2;
+}
+section .container {
   padding: 10px;
   padding-bottom: 30px;
+  width: 1200px;
+  margin: auto;
 }
-.container__heading {
+@media (max-width: 599px) {
+  section .container {
+    width: auto;
+    margin: auto;
+  }
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+  section .container {
+    width: auto;
+    margin: auto;
+  }
+}
+section .container__heading {
   font-size: 40px;
   font-family: "Roboto";
   color: #000;
@@ -862,31 +910,31 @@
   margin-left: 11px;
 }
 @media (max-width: 599px) {
-  .container__heading {
+  section .container__heading {
     font-size: 25px;
   }
 }
-.container .block-1 {
+section .container .block-1 {
   display: flex;
   width: 100%;
 }
 @media (max-width: 599px) {
-  .container .block-1 {
+  section .container .block-1 {
     display: inline-block;
     width: 100%;
   }
 }
-.container .block-2 {
+section .container .block-2 {
   display: flex;
   width: 100%;
 }
 @media (max-width: 599px) {
-  .container .block-2 {
+  section .container .block-2 {
     display: inline-block;
     width: 100%;
   }
 }
-.container .proj-prev {
+section .container .proj-prev {
   width: 40%;
   margin: auto;
   margin-bottom: 40px;
@@ -896,40 +944,40 @@
   transform: scale(1);
   transition: transform 400ms ease-in-out;
 }
-.container .proj-prev:hover {
+section .container .proj-prev:hover {
   transform: scale(1.05);
 }
-.container .proj-prev__a {
+section .container .proj-prev__a {
   text-decoration: none;
 }
-.container .proj-prev__img {
+section .container .proj-prev__img {
   object-fit: cover;
   width: 100%;
   height: 150px;
   border-radius: 25px 25px 0px 0px;
 }
-.container .proj-prev__txt {
+section .container .proj-prev__txt {
   width: 90%;
   height: 60px;
   margin: 10px;
   margin-left: 20px;
   color: #000;
 }
-.container .proj-prev__txt .p {
+section .container .proj-prev__txt .p {
   margin-top: -10px;
 }
-.container .proj-prev__txt .heart {
+section .container .proj-prev__txt .heart {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-.container .proj-prev__txt .fa-heart {
+section .container .proj-prev__txt .fa-heart {
   font-size: 30px;
   margin: 0;
   margin-top: -10px;
   font-weight: 400;
 }
-.container .proj-prev__txt .fa-heart:hover {
+section .container .proj-prev__txt .fa-heart:hover {
   font-weight: 900;
   background-clip: text;
   -webkit-background-clip: text;
@@ -937,7 +985,7 @@
   -webkit-text-fill-color: transparent;
 }
 @media (max-width: 599px) {
-  .container .proj-prev {
+  section .container .proj-prev {
     width: 95%;
     height: 210px;
     margin: auto;
@@ -948,40 +996,40 @@
     transform: scale(1);
     transition: transform 400ms ease-in-out;
   }
-  .container .proj-prev:hover {
+  section .container .proj-prev:hover {
     transform: scale(1.05);
   }
-  .container .proj-prev__a {
+  section .container .proj-prev__a {
     text-decoration: none;
   }
-  .container .proj-prev__img {
+  section .container .proj-prev__img {
     object-fit: cover;
     width: 100%;
     height: 150px;
     border-radius: 25px 25px 0px 0px;
   }
-  .container .proj-prev__txt {
+  section .container .proj-prev__txt {
     width: 90%;
     height: 60px;
     margin: 10px;
     margin-left: 20px;
     color: #000;
   }
-  .container .proj-prev__txt .p {
+  section .container .proj-prev__txt .p {
     margin-top: -10px;
   }
-  .container .proj-prev__txt .heart {
+  section .container .proj-prev__txt .heart {
     width: 100%;
     justify-content: flex-end;
     display: flex;
   }
-  .container .proj-prev__txt .fa-heart {
+  section .container .proj-prev__txt .fa-heart {
     font-size: 25px;
     margin: 0;
     margin-top: -10px;
     font-weight: 400;
   }
-  .container .proj-prev__txt .fa-heart:hover {
+  section .container .proj-prev__txt .fa-heart:hover {
     font-weight: 900;
     background-clip: text;
     background-image: linear-gradient(#9356DC, #FF79DA);
@@ -989,21 +1037,37 @@
   }
 }
 
-.section {
+section {
   background-color: #f2f2f2;
-  padding-bottom: 25px;
 }
-.section__heading {
+section .section {
+  padding-bottom: 25px;
+  width: 1200px;
+  margin: auto;
+}
+@media (min-width: 600px) and (max-width: 1199px) {
+  section .section {
+    width: auto;
+    margin: auto;
+  }
+}
+@media (max-width: 599px) {
+  section .section {
+    width: auto;
+    margin: auto;
+  }
+}
+section .section__heading {
   margin-left: 50px;
   border-bottom: 2px solid #99E2D0;
   width: 5%;
   display: flex;
   font-size: 30px;
 }
-.section__list {
+section .section__list {
   padding: 0px;
 }
-.section__list__link {
+section .section__list__link {
   background-color: #fff;
   width: 50%;
   height: 60px;
@@ -1016,33 +1080,33 @@
   padding: 0px;
   overflow: hidden;
 }
-.section__list__link .animation {
+section .section__list__link .animation {
   display: flex;
   justify-content: flex-end;
   margin-top: -18px;
 }
-.section__list__link .animation .hover {
+section .section__list__link .animation .hover {
   position: relative;
   right: -25px;
 }
-.section__list__link:hover .container-txt > p {
+section .section__list__link:hover .container-txt > p {
   margin: 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 70%;
 }
-.section__list__link:hover .section__list__link-type {
+section .section__list__link:hover .section__list__link-type {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 62%;
 }
-.section__list__link:hover .section__list__link-type--span {
+section .section__list__link:hover .section__list__link-type--span {
   transition: 2.3s;
   margin-right: 26%;
 }
-.section__list__link:hover .hover {
+section .section__list__link:hover .hover {
   width: 30%;
   height: 64px;
   margin-right: -13px;
@@ -1054,7 +1118,7 @@
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
 }
-.section__list__link:hover .hover .fa-check-circle {
+section .section__list__link:hover .hover .fa-check-circle {
   animation: spin 1 1000ms 0ms ease-in-out;
   margin-top: 18px;
   margin-left: -22px;
@@ -1064,43 +1128,43 @@
   display: block;
   height: min-content;
 }
-.section__list__link:nth-child(1) {
+section .section__list__link:nth-child(1) {
   animation: progress-bar 1 1000ms linear;
   transform-origin: bottom;
 }
-.section__list__link:nth-child(2) {
+section .section__list__link:nth-child(2) {
   animation: progress-bar 1 1500ms linear;
   transform-origin: bottom;
 }
-.section__list__link:nth-child(3) {
+section .section__list__link:nth-child(3) {
   animation: progress-bar 1 2000ms linear;
   transform-origin: bottom;
 }
-.section__list__link:nth-child(4) {
+section .section__list__link:nth-child(4) {
   animation: progress-bar 1 3000ms linear;
   transform-origin: bottom;
 }
-.section__list__link:nth-child(5) {
+section .section__list__link:nth-child(5) {
   animation: progress-bar 1 4000ms linear;
   transform-origin: bottom;
 }
-.section__list__link > a {
+section .section__list__link > a {
   text-decoration: none;
   color: #000;
 }
-.section__list__link .container-txt {
+section .section__list__link .container-txt {
   padding: 5px;
   width: 100%;
   cursor: pointer;
 }
-.section__list__link .container-txt > p {
+section .section__list__link .container-txt > p {
   margin: 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 70%;
 }
-.section__list__link-type {
+section .section__list__link-type {
   margin: 0px;
   margin-bottom: 5px;
   font-size: 20px;
@@ -1109,34 +1173,34 @@
   white-space: nowrap;
   overflow: hidden;
 }
-.section__list__link-type--span {
+section .section__list__link-type--span {
   display: flex;
   justify-content: flex-end;
   font-weight: 900;
   margin-top: -27px;
   margin-right: 10px;
 }
-.section__list__link-type--span > .hover {
+section .section__list__link-type--span > .hover {
   margin-top: -36px;
 }
-.section__list__link-type--span > .hover .fa-check-circle {
+section .section__list__link-type--span > .hover .fa-check-circle {
   font-size: 20px;
   margin-top: 10px;
   font-weight: 900;
   display: none;
 }
 @media (min-width: 600px) and (max-width: 1199px) {
-  .section__heading {
+  section .section__heading {
     margin-left: 35px;
     border-bottom: 2px solid #99E2D0;
     width: 5%;
     display: flex;
     font-size: 30px;
   }
-  .section__list {
+  section .section__list {
     padding: 0px;
   }
-  .section__list__link {
+  section .section__list__link {
     background-color: #fff;
     width: 50%;
     height: 60px;
@@ -1149,34 +1213,36 @@
     overflow: hidden;
     padding: 0px;
   }
-  .section__list__link .animation {
+  section .section__list__link .animation {
     display: flex;
     justify-content: flex-end;
     margin-top: -18px;
   }
-  .section__list__link .animation .hover {
+  section .section__list__link .animation .hover {
     position: relative;
     right: -25px;
     margin-top: -43px;
   }
-  .section__list__link:hover .container-txt > p {
+  section .section__list__link:hover .container-txt > p {
+    transform: 3s;
+    transform-origin: right;
     margin: 0px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width: 62%;
   }
-  .section__list__link:hover .section__list__link-type {
+  section .section__list__link:hover .section__list__link-type {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width: 62%;
   }
-  .section__list__link:hover .section__list__link-type--span {
+  section .section__list__link:hover .section__list__link-type--span {
     transition: 2.3s;
     margin-right: 23%;
   }
-  .section__list__link:hover .hover {
+  section .section__list__link:hover .hover {
     width: 30%;
     height: 62px;
     margin-right: -13px;
@@ -1187,7 +1253,7 @@
     background-color: #99E2D0;
     border-radius: 0px 20px 20px 0px;
   }
-  .section__list__link:hover .hover .fa-check-circle {
+  section .section__list__link:hover .hover .fa-check-circle {
     animation: spin 1 1200ms 0ms ease-in-out;
     margin-top: 18px;
     font-size: 30px;
@@ -1196,31 +1262,31 @@
     display: block;
     height: min-content;
   }
-  .section__list__link:nth-child(1) {
+  section .section__list__link:nth-child(1) {
     animation: progress-bar 1 1000ms linear;
     transform-origin: bottom;
   }
-  .section__list__link:nth-child(2) {
+  section .section__list__link:nth-child(2) {
     animation: progress-bar 1 1500ms linear;
     transform-origin: bottom;
   }
-  .section__list__link:nth-child(3) {
+  section .section__list__link:nth-child(3) {
     animation: progress-bar 1 2000ms linear;
     transform-origin: bottom;
   }
-  .section__list__link:nth-child(4) {
+  section .section__list__link:nth-child(4) {
     animation: progress-bar 1 3000ms linear;
     transform-origin: bottom;
   }
-  .section__list__link:nth-child(5) {
+  section .section__list__link:nth-child(5) {
     animation: progress-bar 1 4000ms linear;
     transform-origin: bottom;
   }
-  .section__list__link > a {
+  section .section__list__link > a {
     text-decoration: none;
     color: #000;
   }
-  .section__list__link-type {
+  section .section__list__link-type {
     margin: 0px;
     margin-bottom: 5px;
     font-size: 20px;
@@ -1229,7 +1295,7 @@
     white-space: nowrap;
     overflow: hidden;
   }
-  .section__list__link-type--span {
+  section .section__list__link-type--span {
     display: flex;
     justify-content: flex-end;
     font-weight: 900;
@@ -1238,19 +1304,19 @@
   }
 }
 @media (max-width: 599px) {
-  .section__heading {
+  section .section__heading {
     margin-left: 10px;
     padding-top: 25px;
     border-bottom: 2px solid #99E2D0;
     width: 9%;
     font-size: 15px;
   }
-  .section__list {
+  section .section__list {
     padding: 0px;
   }
-  .section__list__link {
+  section .section__list__link {
     background-color: #fff;
-    width: 90%;
+    width: 70%;
     margin: auto;
     display: inherit;
     border-radius: 15px;
@@ -1260,34 +1326,36 @@
     height: 50px;
     overflow: hidden;
   }
-  .section__list__link .animation {
+  section .section__list__link .animation {
     display: flex;
     justify-content: flex-end;
     margin-top: -18px;
   }
-  .section__list__link .animation > .hover {
+  section .section__list__link .animation > .hover {
     position: relative;
     right: -25px;
     margin-top: -30px;
   }
-  .section__list__link:hover .container-txt > p {
+  section .section__list__link:hover .container-txt > p {
+    transform-origin: right;
     margin: 0px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width: 62%;
   }
-  .section__list__link:hover .section__list__link-type {
+  section .section__list__link:hover .section__list__link-type {
+    transform-origin: right;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width: 62%;
   }
-  .section__list__link:hover .section__list__link-type--span {
+  section .section__list__link:hover .section__list__link-type--span {
     transition: 2.3s;
     margin-left: -23%;
   }
-  .section__list__link:hover .hover {
+  section .section__list__link:hover .hover {
     width: 30%;
     height: 52px;
     margin-right: -15px;
@@ -1296,7 +1364,7 @@
     background-color: #99E2D0;
     border-radius: 0px 20px 20px 0px;
   }
-  .section__list__link:hover .hover .fa-check-circle {
+  section .section__list__link:hover .hover .fa-check-circle {
     animation: spin 1 1500ms 0ms ease-in-out;
     margin-top: 12px;
     font-size: 30px;
@@ -1305,39 +1373,39 @@
     display: block;
     height: min-content;
   }
-  .section__list__link:nth-child(2) {
+  section .section__list__link:nth-child(2) {
     animation: progress-bar 1 1500ms linear;
     transform-origin: bottom;
   }
-  .section__list__link:nth-child(3) {
+  section .section__list__link:nth-child(3) {
     animation: progress-bar 1 2000ms linear;
     transform-origin: bottom;
   }
-  .section__list__link:nth-child(4) {
+  section .section__list__link:nth-child(4) {
     animation: progress-bar 1 3000ms linear;
     transform-origin: bottom;
   }
-  .section__list__link:nth-child(5) {
+  section .section__list__link:nth-child(5) {
     animation: progress-bar 1 4000ms linear;
     transform-origin: bottom;
   }
-  .section__list__link > a {
+  section .section__list__link > a {
     text-decoration: none;
     color: #000;
   }
-  .section__list__link .container-txt {
+  section .section__list__link .container-txt {
     padding: 6px;
     width: 100%;
     cursor: pointer;
   }
-  .section__list__link .container-txt > p {
+  section .section__list__link .container-txt > p {
     margin: 0px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
     width: 80%;
   }
-  .section__list__link-type {
+  section .section__list__link-type {
     margin: 0px;
     width: 70%;
     font-size: 15px;
@@ -1345,7 +1413,7 @@
     white-space: nowrap;
     overflow: hidden;
   }
-  .section__list__link-type--span {
+  section .section__list__link-type--span {
     width: 100%;
     display: flex;
     justify-content: flex-end;

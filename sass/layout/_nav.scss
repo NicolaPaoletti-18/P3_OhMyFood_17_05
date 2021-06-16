@@ -1,4 +1,6 @@
 .nav{
+    width: 1200px;
+    margin: auto;
     &__h3{
         font-size: $font-size-heading-1200px;
         margin-left: 12px;
@@ -48,6 +50,8 @@
          }
      }
     @media (min-width: 600px) and (max-width: 1199px){
+     width: auto;
+     margin: auto;
         &__h3{
             font-size: $font-size-heading-1200px;
             margin-left: 20px;
@@ -101,6 +105,8 @@
     }
 }
     @media (max-width: 599px) {
+        width: auto;
+        margin: auto;
     &__h3{
             font-size: $font-size-heading;
             margin-left: 20px;

@@ -1,8 +1,8 @@
 
-.chargament{
+.chargament {
     @include chargament;
     &__img{
-      width: 80%;
+      width: 40%;
       object-fit: cover;
     }
         &>.lds-ellipsis {
@@ -37,12 +37,24 @@
             animation: lds-ellipsis3 0.6s infinite;
           }
      }
-
-.container{
-    background-color: $color-background;
+section {
+  background-color: $color-background;
+.container {
+    
     padding: 10px;
     padding-bottom: 30px;
-
+    width: 1200px;
+    margin: auto;
+    @media  (max-width: 599px) {
+      width: auto;
+      margin: auto;
+    }
+    @media (min-width: 600px) and (max-width: 1199px) {
+      width: auto;
+      margin: auto;
+    }
+      
+      
     &__heading{
       font-size: $font-size-heading-1200px;
       font-family: $font-primary;
@@ -164,19 +176,31 @@
 
 }
 }
-.section{
-    background-color: $color-background;
+}
+section {
+  background-color: $color-background;
+.section {
     padding-bottom: 25px;
-    &__heading{
+    width: 1200px;
+    margin: auto;
+    @media (min-width: 600px) and (max-width: 1199px) {
+      width: auto;
+      margin: auto;
+     }
+     @media (max-width: 599px) {
+      width: auto;
+      margin: auto;
+     }
+    &__heading {
       margin-left: 50px;
       border-bottom: 2px solid $color-tertiary; 
       width: 5%;
       display: flex;
       font-size: $font-size-1200px;
     }
-    &__list{
+    &__list {
       padding: 0px;
-      &__link{
+      &__link {
       @include list-1200px;
       padding: 0px;
       overflow: hidden;
@@ -184,13 +208,13 @@
         display: flex;
         justify-content: flex-end;
         margin-top: -18px;
-      .hover{
+      .hover {
         position: relative;
         right: -25px;
       }
     }
-      &:hover{
-        .container-txt{
+      &:hover {
+        .container-txt {
           > p{
             margin: 0px;
             text-overflow: ellipsis;
@@ -199,17 +223,17 @@
             width: 70%;
             }
           }
-        .section__list__link-type{
+        .section__list__link-type {
           text-overflow: ellipsis;
           white-space: nowrap;
           overflow: hidden; 
           width: 62%;
         }
-        .section__list__link-type--span{
+        .section__list__link-type--span {
           transition: 2.3s;
           margin-right: 26%;
         }
-         .hover{
+         .hover {
            width: 30%;
            height: 64px;
            margin-right: -13px;
@@ -220,7 +244,7 @@
            animation: list_hover-out 1 2000ms linear;
            background-color: $color-tertiary;
            border-radius: 0px 20px 20px 0px ;
-        .fa-check-circle{
+        .fa-check-circle {
           animation: spin 1 1000ms 0ms ease-in-out;
           margin-top: 18px;
           margin-left: -22px;
@@ -244,11 +268,11 @@
           animation: progress-bar 1 2000ms  linear;
           transform-origin: bottom;
       }
-      &:nth-child(4){
+      &:nth-child(4) {
           animation: progress-bar 1 3000ms linear;
           transform-origin:bottom;
         }
-      &:nth-child(5){
+      &:nth-child(5) {
           animation: progress-bar 1 4000ms linear;
           transform-origin: bottom;
        }
@@ -257,7 +281,7 @@
               color: $color-black;
         
       }   
-      .container-txt{
+      .container-txt {
         padding: 5px;
         width: 100%;
         cursor: pointer;
@@ -269,7 +293,7 @@
         width: 70%;
         }
       }
-      &-type{
+      &-type {
           margin: 0px;
           margin-bottom: 5px;
           font-size: $font-size3;
@@ -296,17 +320,17 @@
        } 
    }
   }
-    @media (min-width: 600px) and (max-width: 1199px){
-      &__heading{
+    @media (min-width: 600px) and (max-width: 1199px) {
+      &__heading {
         margin-left: 35px;
         border-bottom: 2px solid $color-tertiary; 
         width: 5%;
         display: flex;
         font-size: $font-size-1200px;
       }
-      &__list{
+      &__list {
         padding: 0px;
-        &__link{
+        &__link {
         @include list-1200px;
         overflow: hidden;
         padding: 0px;
@@ -314,15 +338,17 @@
           display: flex;
           justify-content: flex-end;
           margin-top: -18px;
-        .hover{
+        .hover {
           position: relative;
           right: -25px;
           margin-top: -43px;
         }
       }
-        &:hover{
-          .container-txt{
-            > p{
+        &:hover {
+          .container-txt {
+            > p {
+              transform: 3s;
+              transform-origin: right;
               margin: 0px;
               text-overflow: ellipsis;
               white-space: nowrap;
@@ -330,17 +356,17 @@
               width: 62%;
               }
             }
-          .section__list__link-type{
+          .section__list__link-type {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden; 
             width: 62%;
           }
-          .section__list__link-type--span{
+          .section__list__link-type--span {
             transition: 2.3s;
             margin-right: 23%;
           }
-           .hover{
+           .hover {
              width: 30%;
              height: 62px;
              margin-right: -13px;
@@ -350,7 +376,7 @@
              animation: list_hover-out 1 2000ms linear;
              background-color: $color-tertiary;
              border-radius: 0px 20px 20px 0px ;
-          .fa-check-circle{
+          .fa-check-circle {
             animation: spin 1 1200ms 0ms ease-in-out;
             margin-top: 18px;
             font-size: 30px;
@@ -373,20 +399,20 @@
             animation: progress-bar 1 2000ms  linear;
             transform-origin: bottom;
         }
-        &:nth-child(4){
+        &:nth-child(4) {
             animation: progress-bar 1 3000ms linear;
             transform-origin:bottom;
           }
-        &:nth-child(5){
+        &:nth-child(5) {
             animation: progress-bar 1 4000ms linear;
             transform-origin: bottom;
          }
-         > a{
+         > a {
                 text-decoration: none;
                 color: $color-black;
           
         }   
-        &-type{
+        &-type  {
             margin: 0px;
             margin-bottom: 5px;
             font-size: $font-size3;
@@ -394,7 +420,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
-        &--span{
+        &--span {
             display: flex;
             justify-content: flex-end;
             font-weight: 900;
@@ -404,18 +430,19 @@
          } 
      }
     }
+     
     }
-    @media (max-width: 599px){
-      &__heading{
+    @media (max-width: 599px) {
+      &__heading {
         margin-left: 10px;
         padding-top: 25px;
         border-bottom: 2px solid $color-tertiary; 
         width: 9%;
         font-size: $font-size;
       }
-      &__list{
+      &__list {
           padding: 0px;
-          &__link{
+          &__link {
           @include list;
           overflow: hidden;
           .animation {
@@ -423,16 +450,17 @@
             justify-content: flex-end;
             margin-top: -18px;
  
-          >.hover{
+          >.hover {
             position: relative;
             right: -25px;
             margin-top: -30px;
             
           }
         }
-          &:hover{
-            .container-txt{
-              > p{
+          &:hover {
+            .container-txt {
+              > p {
+                transform-origin: right;
                 margin: 0px;
                 text-overflow: ellipsis;
                 white-space: nowrap;
@@ -440,17 +468,18 @@
                 width: 62%;
                 }
               }
-            .section__list__link-type{
+            .section__list__link-type {
+              transform-origin: right;
               text-overflow: ellipsis;
               white-space: nowrap;
               overflow: hidden; 
               width: 62%;
             }
-            .section__list__link-type--span{
+            .section__list__link-type--span {
               transition: 2.3s;
               margin-left: -23%;
             }
-             .hover{
+             .hover {
                width: 30%;
                height: 52px;
                margin-right: -15px;
@@ -458,7 +487,7 @@
                animation: list_hover-out 1 2000ms linear;
                background-color: $color-tertiary;
                border-radius: 0px 20px 20px 0px ;
-            .fa-check-circle{
+            .fa-check-circle {
               animation: spin 1 1500ms 0ms ease-in-out;
               margin-top: 12px;
               font-size: 30px;
@@ -477,23 +506,23 @@
               animation: progress-bar 1 2000ms  linear;
               transform-origin: bottom;
           }
-          &:nth-child(4){
+          &:nth-child(4) {
               animation: progress-bar 1 3000ms linear;
               transform-origin:bottom;
             }
-          &:nth-child(5){
+          &:nth-child(5) {
               animation: progress-bar 1 4000ms linear;
               transform-origin: bottom;
            }
-           > a{
+           > a {
                   text-decoration: none;
                   color: $color-black;
           } 
-          .container-txt{
+          .container-txt {
             padding: 6px;
             width: 100%;
             cursor: pointer;
-          > p{
+          > p {
             margin: 0px;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -501,7 +530,7 @@
             width: 80%;
             }
           }
-          &-type{
+          &-type { 
               margin: 0px;
               width: 70%;
               font-size: $font-size;
@@ -509,7 +538,7 @@
               white-space: nowrap;
               overflow: hidden;
          
-          &--span{
+          &--span {
               width: 100%;
               display: flex;
               justify-content: flex-end;
@@ -522,4 +551,5 @@
 
       }
   }
+}
 }

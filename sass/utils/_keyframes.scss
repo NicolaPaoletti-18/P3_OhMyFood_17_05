@@ -1,5 +1,5 @@
     
-    @keyframes progress-bar{
+@keyframes progress-bar{
         0% {
             transform: translate(-9999px) ;
             opacity: 3;
@@ -16,8 +16,8 @@
         100% {
             transform: translate(0);
         }
-    }
- @keyframes rotate-btn {
+}
+@keyframes rotate-btn {
     0% {
         transform: rotate(0deg);
     }
@@ -36,8 +36,8 @@
     100% {
         transform: rotate(0deg);
     }
- }
- @keyframes chargament{
+}
+@keyframes chargament {
     0% {
         transform: scaleX(0) ;
         opacity: 4;
@@ -65,16 +65,16 @@
     100% {
       transform: scale(1);
     }
-  }
-  @keyframes lds-ellipsis3 {
+}
+@keyframes lds-ellipsis3 {
     0% {
       transform: scale(1);
     }
     100% {
       transform: scale(0);
     }
-  }
-  @keyframes lds-ellipsis2 {
+}
+@keyframes lds-ellipsis2 {
     0% {
       transform: translate(0, 0);
     }
@@ -90,7 +90,6 @@
         transform: translateX(0);
         }
 }
-
 @keyframes list_hover-out {
     0% {
         transform: translate(-9999px) ;
@@ -107,7 +106,6 @@
         transform: scaleX(1);
     }
 }
-
 @keyframes spin {
     0%{
         transform: rotate(-360deg);

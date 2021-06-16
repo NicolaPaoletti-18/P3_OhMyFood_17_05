@@ -6,19 +6,19 @@
     background: #97939740;
     box-shadow: inset 0px 3px 2px #1312123d;
 
-    .nav_search{
+    .nav_search {
      border: 0px;
      background: #fdfdfd00;
      font-size: $font-size3;
      font-family: $font-primary;
      font-weight: 900;
     }
-    .fa-map-marker-alt{
+    .fa-map-marker-alt {
         margin-top: 15px;
         margin-left: 30px;
     }
-@media (min-width: 600px) and (max-width: 1199px){}
-@media (max-width:599px){
+
+@media (max-width:599px) {
    
    width: 100%;
    display: flex;
@@ -27,16 +27,16 @@
    background: #97939740;
    box-shadow: inset 0px 6px 6px #13121224;
 
-   .nav_search{
+   .nav_search {
     border: 0px;
     background: #fdfdfd00;
     font-size: $font-size;
     font-family: $font-primary;
     font-weight: 900;
    }
-   .fa-map-marker-alt{
+   .fa-map-marker-alt {
        margin-top: 7px;
        margin-left: 30px;
    }
-}
-    }
+  }
+ }
