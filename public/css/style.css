@@ -1125,7 +1125,7 @@ section .section__list__link:hover .section__list__link-type {
   width: 80%;
 }
 section .section__list__link:hover .section__list__link--span {
-  transition: 2s;
+  transition: 0.3s linear;
   margin-right: 26%;
 }
 section .section__list__link:hover .hover {
@@ -1136,12 +1136,12 @@ section .section__list__link:hover .hover {
   margin-top: -46px;
   display: flex;
   justify-content: center;
-  animation: list_hover-out 1 1200ms linear;
+  animation: list_hover-out 1 400ms linear;
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
 }
 section .section__list__link:hover .hover .fa-check-circle {
-  animation: spin 1 1800ms 0ms ease-in-out;
+  animation: spin 1 500ms 0ms ease-in-out;
   margin-top: 18px;
   margin-left: -22px;
   font-size: 44px;
@@ -1258,7 +1258,8 @@ section .section__list__link .container-txt-Over > p {
     width: 62%;
   }
   section .section__list__link:hover .section__list__link-type--span {
-    transition: 2s;
+    transition: 0.3s;
+    transition-delay: 0s;
     margin-right: 23%;
   }
   section .section__list__link:hover .hover {
@@ -1268,12 +1269,12 @@ section .section__list__link .container-txt-Over > p {
     margin-left: 0px;
     display: flex;
     justify-content: center;
-    animation: list_hover-out 1 1200ms linear;
+    animation: list_hover-out 1 400ms linear;
     background-color: #99E2D0;
     border-radius: 0px 20px 20px 0px;
   }
   section .section__list__link:hover .hover .fa-check-circle {
-    animation: spin 1 1800ms 0ms ease-in-out;
+    animation: spin 1 500ms 0ms linear;
     margin-top: 22px;
     font-size: 30px;
     color: #fff;
@@ -1369,7 +1370,7 @@ section .section__list__link .container-txt-Over > p {
     margin-top: -30px;
   }
   section .section__list__link:hover .section__list__link--span {
-    transition: 2s;
+    transition: 0.3s;
     margin-right: 20%;
   }
   section .section__list__link:hover .animation .hover {
@@ -1377,12 +1378,12 @@ section .section__list__link .container-txt-Over > p {
     height: 56px;
     margin-right: -15px;
     margin-left: 0px;
-    animation: list_hover-out 1 1200ms linear;
+    animation: list_hover-out 1 300ms linear;
     background-color: #99E2D0;
     border-radius: 0px 20px 20px 0px;
   }
   section .section__list__link:hover .animation .hover .fa-check-circle {
-    animation: spin 1 1800ms ease-in-out;
+    animation: spin 1 500ms ease-in-out;
     margin-top: 11px;
     font-size: 30px;
     color: #fff;

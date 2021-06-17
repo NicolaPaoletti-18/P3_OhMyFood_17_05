@@ -246,7 +246,7 @@ section {
           width: 80%;
         }
         .section__list__link--span {
-          transition: 2s;
+          transition: 0.3s linear;
           margin-right: 26%;
         }
          .hover {
@@ -257,11 +257,11 @@ section {
            margin-top: -46px;
            display: flex;
            justify-content: center;
-           animation: list_hover-out 1 1200ms linear;
+           animation: list_hover-out 1 400ms linear;
            background-color: $color-tertiary;
            border-radius: 0px 20px 20px 0px ;
         .fa-check-circle {
-          animation: spin 1 1800ms 0ms ease-in-out;
+          animation: spin 1 500ms 0ms ease-in-out;
           margin-top: 18px;
           margin-left: -22px;
           font-size: 44px;
@@ -377,7 +377,8 @@ section {
             width: 62%;
           }
           .section__list__link-type--span {
-            transition: 2s;
+            transition: 0.3s;
+            transition-delay: 0s;
             margin-right: 23%;
           }
            .hover {
@@ -387,11 +388,11 @@ section {
              margin-left: 0px;
              display: flex;
              justify-content: center;
-             animation: list_hover-out 1 1200ms linear;
+             animation: list_hover-out 1 400ms linear;
              background-color: $color-tertiary;
              border-radius: 0px 20px 20px 0px ;
           .fa-check-circle {
-            animation: spin 1 1800ms 0ms ease-in-out;
+            animation: spin 1 500ms 0ms linear;
             margin-top: 22px;
             font-size: 30px;
             color: $color-white;
@@ -488,7 +489,7 @@ section {
         }
           &:hover {
             .section__list__link--span{
-              transition: 2s;
+              transition: 0.3s;
               margin-right: 20%;
             }
           
@@ -498,11 +499,11 @@ section {
                height: 56px;
                margin-right: -15px;
                margin-left: 0px;
-               animation: list_hover-out 1 1200ms  linear;
+               animation: list_hover-out 1 300ms  linear;
                background-color: $color-tertiary;
                border-radius: 0px 20px 20px 0px ;
             .fa-check-circle {
-              animation: spin 1 1800ms  ease-in-out;
+              animation: spin 1 500ms  ease-in-out;
               margin-top: 11px;
               font-size: 30px;
               color: $color-white;
