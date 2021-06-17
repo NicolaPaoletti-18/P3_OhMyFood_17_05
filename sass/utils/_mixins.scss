@@ -1,5 +1,5 @@
 @mixin box-shadow {
-    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:  0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
 @mixin chargament {
     width: 90%;
@@ -171,7 +171,7 @@
 @mixin list-1200px {
     background-color: $color-white;
     width: 50%;
-    height: 60px;
+    height: 70px;
     margin: auto;
     display: inherit;
     border-radius:$size2;

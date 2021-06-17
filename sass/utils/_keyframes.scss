@@ -92,18 +92,24 @@
 }
 @keyframes list_hover-out {
     0% {
-        transform: translate(-9999px) ;
-        transform-origin: right;
-        transform: scaleX(0);
+        transform: translate(9999px) ;
+        transform-origin: left;
     }
-    
-    90%{ 
-        transform: scaleX(0.9);
+    10%{
+        transform: translate(666px) ;
     }
-    
+    60%{
+        transform: translate(100px) ;
+    }
+    80%{
+        transform: translate(50px) ;
+    }
+    90%{
+        transform: translate(25px) ;
+    }
+
     100% {
         transform: translate(0);
-        transform: scaleX(1);
     }
 }
 @keyframes spin {
