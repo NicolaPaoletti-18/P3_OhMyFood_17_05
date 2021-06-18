@@ -23,9 +23,9 @@
    width: 100%;
    display: flex;
    justify-content: center;
-   height: 30px;
+   height: 40px;
    background: #97939740;
-   box-shadow: inset 0px 6px 6px #13121224;
+   box-shadow: inset 0px 3px 2px #1312123d;
 
    .nav_search {
     border: 0px;
@@ -33,10 +33,11 @@
     font-size: $font-size;
     font-family: $font-primary;
     font-weight: 900;
+    margin-right: -50px;
    }
    .fa-map-marker-alt {
-       margin-top: 7px;
-       margin-left: 30px;
+       margin-top: 12px;
+       margin-left: 0px;
    }
   }
  }

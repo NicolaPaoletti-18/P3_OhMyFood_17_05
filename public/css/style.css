@@ -226,7 +226,7 @@
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -330,7 +330,7 @@
     font-size: 15px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     border-radius: 20px;
@@ -476,7 +476,8 @@
   .header__h1 > a .fa-arrow-left {
     font-size: 20px;
     margin-left: 20px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    margin-top: 15px;
     color: #000;
   }
   .header__h1__img {
@@ -606,13 +607,13 @@ footer .footer {
 footer .footer__heading {
   width: 20%;
   margin-left: 40px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
   filter: invert(100%);
 }
 footer .footer__ul {
   margin: 0px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   list-style: none;
 }
 footer .footer__ul__link--a {
@@ -635,13 +636,13 @@ footer .footer__ul__link--a {
     width: 25%;
     margin-left: 40px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 15px;
     filter: invert(100%);
   }
   footer .footer__ul {
     margin: 0px;
     list-style: none;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
   footer .footer__ul__link--a {
     text-decoration: none;
@@ -707,7 +708,7 @@ footer .footer__ul__link--a {
   margin-left: 5%;
   color: #000;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 900;
 }
 @media (min-width: 600px) and (max-width: 1199px) {
   .nav {
@@ -770,7 +771,7 @@ footer .footer__ul__link--a {
     margin-left: 2%;
     color: #000;
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 900;
   }
 }
 @media (max-width: 599px) {
@@ -828,9 +829,10 @@ footer .footer__ul__link--a {
     background-color: #9356DC;
   }
   .nav__ul__link--a--span__strong {
-    margin-left: 15%;
+    margin-left: 16%;
     color: #000;
     font-size: 15px;
+    font-size: 900;
   }
 }
 
@@ -1048,7 +1050,7 @@ section {
   background-color: #f2f2f2;
 }
 section .section {
-  padding-bottom: 25px;
+  padding-bottom: 70px;
   width: 1200px;
   margin: auto;
 }
@@ -1340,14 +1342,14 @@ section .section__list__link .container-txt-Over > p {
   }
   section .section__list__link {
     background-color: #fff;
-    width: 70%;
+    width: 90%;
     margin: auto;
     display: inherit;
     border-radius: 15px;
     box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
     padding: 0px;
     margin-bottom: 20px;
-    height: 50px;
+    height: 60px;
     max-width: 100%;
     overflow: hidden;
   }
@@ -1367,7 +1369,7 @@ section .section__list__link .container-txt-Over > p {
   section .section__list__link .animation > .hover {
     position: relative;
     right: -25px;
-    margin-top: -30px;
+    margin-top: -40px;
   }
   section .section__list__link:hover .section__list__link--span {
     transition: 0.3s;
@@ -1375,7 +1377,7 @@ section .section__list__link .container-txt-Over > p {
   }
   section .section__list__link:hover .animation .hover {
     width: 30%;
-    height: 56px;
+    height: 60px;
     margin-right: -15px;
     margin-left: 0px;
     animation: list_hover-out 1 300ms linear;
@@ -1384,7 +1386,8 @@ section .section__list__link .container-txt-Over > p {
   }
   section .section__list__link:hover .animation .hover .fa-check-circle {
     animation: spin 1 500ms ease-in-out;
-    margin-top: 11px;
+    margin-top: 18px;
+    margin-right: 15px;
     font-size: 30px;
     color: #fff;
     font-weight: 900;
@@ -1420,12 +1423,14 @@ section .section__list__link .container-txt-Over > p {
   }
   section .section__list__link .container-txt-type {
     margin: 0px;
+    margin-top: 5px;
     font-size: 15px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
   }
   section .section__list__link .container-txt-Over {
+    margin-top: 5px;
     display: flex;
     justify-content: space-between;
   }
@@ -1462,9 +1467,9 @@ section .section__list__link .container-txt-Over > p {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 30px;
+    height: 40px;
     background: #97939740;
-    box-shadow: inset 0px 6px 6px #13121224;
+    box-shadow: inset 0px 3px 2px #1312123d;
   }
   .form .nav_search {
     border: 0px;
@@ -1472,10 +1477,11 @@ section .section__list__link .container-txt-Over > p {
     font-size: 15px;
     font-family: "Roboto";
     font-weight: 900;
+    margin-right: -50px;
   }
   .form .fa-map-marker-alt {
-    margin-top: 7px;
-    margin-left: 30px;
+    margin-top: 12px;
+    margin-left: 0px;
   }
 }
 
