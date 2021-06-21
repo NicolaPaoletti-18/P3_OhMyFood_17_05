@@ -257,7 +257,7 @@ section {
            margin-top: -46px;
            display: flex;
            justify-content: center;
-           animation: list_hover-out 1 400ms linear;
+           animation: list_hover-out 1 0.3s cubic-bezier(.75,.54,.03,1);
            background-color: $color-tertiary;
            border-radius: 0px 20px 20px 0px ;
         .fa-check-circle {
@@ -346,6 +346,7 @@ section {
           justify-content: flex-end;
           font-weight: 900;
           margin-top: 0px;
+          padding-right: 20px;
           margin-right: 10px;
         }
         .animation {
@@ -388,7 +389,7 @@ section {
              margin-left: 0px;
              display: flex;
              justify-content: center;
-             animation: list_hover-out 1 400ms linear;
+             animation: list_hover-out 1 0.3s cubic-bezier(.75,.54,.03,1);
              background-color: $color-tertiary;
              border-radius: 0px 20px 20px 0px ;
           .fa-check-circle {
@@ -472,7 +473,7 @@ section {
             display: flex;
             justify-content: flex-end;
             align-items: flex-end;
-            padding-right: 15px;
+            padding-right: 20px;
             margin-top: -24px;
            } 
           .animation {
@@ -489,7 +490,7 @@ section {
         }
           &:hover {
             .section__list__link--span{
-              transition: 0.3s;
+              transition: 0.3s linear;
               margin-right: 20%;
             }
           
@@ -499,7 +500,7 @@ section {
                height: 60px;
                margin-right: -15px;
                margin-left: 0px;
-               animation: list_hover-out 1 300ms  linear;
+               animation: list_hover-out 1 0.3s  cubic-bezier(.75,.54,.03,1);
                background-color: $color-tertiary;
                border-radius: 0px 20px 20px 0px ;
             .fa-check-circle {

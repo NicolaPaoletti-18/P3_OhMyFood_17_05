@@ -129,7 +129,7 @@
   color: #000;
   font-size: 20px;
   background-color: #fff;
-  animation: block-pages 1ms 5000ms both cubic-bezier(0.9, 0, 0.1, 1);
+  animation: block-pages 1ms 3500ms both cubic-bezier(0.9, 0, 0.1, 1);
 }
 @media (max-width: 599px) {
   .block_page-1 {
@@ -139,7 +139,7 @@
     color: #000;
     font-size: 15px;
     background-color: #fff;
-    animation: block-pages 1ms 5000ms both cubic-bezier(0.9, 0, 0.1, 1);
+    animation: block-pages 1ms 3500ms both cubic-bezier(0.9, 0, 0.1, 1);
   }
 }
 
@@ -394,6 +394,7 @@
   width: 30%;
   height: 20%;
   margin: auto;
+  margin-left: 25%;
   margin-top: 10px;
   object-fit: cover;
 }
@@ -437,6 +438,7 @@
   .header__h1__img {
     width: 40%;
     height: 10%;
+    margin-left: 25%;
     margin: auto;
     margin-top: 10px;
     object-fit: cover;
@@ -484,6 +486,7 @@
     width: 50%;
     height: 20%;
     margin: auto;
+    margin-left: 18%;
     margin-top: 10px;
     object-fit: cover;
   }
@@ -500,12 +503,12 @@
   font-family: "Shrikhand";
   font-size: 40px;
   display: flex;
-  justify-content: space-around;
-  width: 98.8%;
+  justify-content: space-evenly;
+  width: 100%;
   height: 75px;
-  position: absolute;
-  margin-top: -50px;
-  padding-top: 16px;
+  padding-top: 15px;
+  margin-bottom: -40px;
+  margin-top: 0px;
   background-color: #f2f2f2;
   border-radius: 36px 36px 0px 0px;
 }
@@ -536,12 +539,12 @@
     font-family: "Shrikhand";
     font-size: 40px;
     display: flex;
-    justify-content: space-around;
-    width: 97.3%;
+    justify-content: space-evenly;
+    width: 100%;
     height: 75px;
-    position: absolute;
-    margin-top: -50px;
-    padding-top: 16px;
+    padding-top: 15px;
+    margin-bottom: -40px;
+    margin-top: 0px;
     background-color: #f2f2f2;
     border-radius: 36px 36px 0px 0px;
   }
@@ -845,7 +848,7 @@ footer .footer__ul__link--a {
   flex-direction: column;
   align-items: center;
   padding: 0.1rem;
-  animation: chargament 4500ms 250ms both cubic-bezier(0.9, 0, 0.1, 1);
+  animation: chargament 3000ms 250ms both cubic-bezier(0.9, 0, 0.1, 1);
   position: absolute;
   transform: scaleX(1);
   transform-origin: top;
@@ -1138,7 +1141,7 @@ section .section__list__link:hover .hover {
   margin-top: -46px;
   display: flex;
   justify-content: center;
-  animation: list_hover-out 1 400ms linear;
+  animation: list_hover-out 1 0.3s cubic-bezier(0.75, 0.54, 0.03, 1);
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
 }
@@ -1232,6 +1235,7 @@ section .section__list__link .container-txt-Over > p {
     justify-content: flex-end;
     font-weight: 900;
     margin-top: 0px;
+    padding-right: 20px;
     margin-right: 10px;
   }
   section .section__list__link .animation {
@@ -1271,7 +1275,7 @@ section .section__list__link .container-txt-Over > p {
     margin-left: 0px;
     display: flex;
     justify-content: center;
-    animation: list_hover-out 1 400ms linear;
+    animation: list_hover-out 1 0.3s cubic-bezier(0.75, 0.54, 0.03, 1);
     background-color: #99E2D0;
     border-radius: 0px 20px 20px 0px;
   }
@@ -1358,7 +1362,7 @@ section .section__list__link .container-txt-Over > p {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-right: 15px;
+    padding-right: 20px;
     margin-top: -24px;
   }
   section .section__list__link .animation {
@@ -1372,7 +1376,7 @@ section .section__list__link .container-txt-Over > p {
     margin-top: -40px;
   }
   section .section__list__link:hover .section__list__link--span {
-    transition: 0.3s;
+    transition: 0.3s linear;
     margin-right: 20%;
   }
   section .section__list__link:hover .animation .hover {
@@ -1380,7 +1384,7 @@ section .section__list__link .container-txt-Over > p {
     height: 60px;
     margin-right: -15px;
     margin-left: 0px;
-    animation: list_hover-out 1 300ms linear;
+    animation: list_hover-out 1 0.3s cubic-bezier(0.75, 0.54, 0.03, 1);
     background-color: #99E2D0;
     border-radius: 0px 20px 20px 0px;
   }
