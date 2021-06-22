@@ -1,6 +1,6 @@
-.header--nav__btn-explorer{
+.header--nav__btn-explorer {
     @include btn-1-1200px;
-    &:hover{
+    &:hover {
         transform: scale(1.05);
     }
     >a{
@@ -11,29 +11,29 @@
     @media (min-width: 600px) and (max-width: 1199px){
     @include btn-1-tablette;
     text-align: center;
-    &:hover{
+    &:hover {
         transform: scale(1.05);
     }
-    >a{
+    >a {
         color: white;
         text-decoration: none;
         font-family: $font-primary;
         }
     }
-    @media (max-width:599px){
+    @media (max-width:599px) {
        @include btn-1;
        text-align: center;
-        &:hover{
+        &:hover {
             transform: scale(1.05);
         }
-        &-a{
+        &-a {
             color: white;
             text-decoration: none;
             font-family: $font-primary;
         }
         }
     }
-.proj-prev__btn-vert{
+.proj-prev__btn-vert {
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -41,7 +41,7 @@
      @include btn-vert-1200px;
     }
     
-    @media (min-width: 600px) and (max-width: 1199px){
+    @media (min-width: 600px) and (max-width: 1199px) {
         width: 100%;
         display: flex;
         justify-content: flex-end;
@@ -51,22 +51,22 @@
         }
     }
 
-    @media (max-width:599px){
+    @media (max-width:599px) {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-        >span{
+        >span {
     @include btn-vert;
     }
     }
 }
-.section__btn-commander{
+.section__btn-commander {
     @include btn-1-1200px;
-    &:hover{
+    &:hover {
         transform: scale(1.05);
     }
-    @media (min-width: 600px) and (max-width: 1199px){}
-    @media (max-width:599px){
+
+    @media (max-width:599px) {
         @include btn-1;
         &:hover{
             transform: scale(1.05);

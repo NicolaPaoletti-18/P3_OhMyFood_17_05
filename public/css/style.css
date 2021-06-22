@@ -394,7 +394,6 @@
   width: 30%;
   height: 20%;
   margin: auto;
-  margin-left: 25%;
   margin-top: 10px;
   object-fit: cover;
 }
@@ -438,7 +437,6 @@
   .header__h1__img {
     width: 40%;
     height: 10%;
-    margin-left: 25%;
     margin: auto;
     margin-top: 10px;
     object-fit: cover;
@@ -486,7 +484,6 @@
     width: 50%;
     height: 20%;
     margin: auto;
-    margin-left: 18%;
     margin-top: 10px;
     object-fit: cover;
   }
@@ -918,7 +915,7 @@ section .container__heading {
   font-size: 40px;
   font-family: "Roboto";
   color: #000;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-left: 11px;
 }
 @media (max-width: 599px) {
