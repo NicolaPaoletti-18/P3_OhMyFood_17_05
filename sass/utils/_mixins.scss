@@ -84,6 +84,7 @@
 @mixin btn-vert {
     width: 20%;
     margin:10px;
+    padding: 2px;
     display: flex;
     position: absolute;
     background-color: $color-tertiary;
@@ -93,6 +94,7 @@
 @mixin btn-vert-1200px {
     width: 20%;
     margin:10px;
+    padding: 2px;
     display: flex;
     position: absolute;
     background-color: $color-tertiary;

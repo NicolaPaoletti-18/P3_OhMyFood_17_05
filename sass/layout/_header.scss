@@ -163,8 +163,9 @@
                         font-weight: 900;
                         -webkit-background-clip: text;
                         background-clip: text;
+                        color: transparent;
                         background-image: linear-gradient($color-primary, $color-secondary);
-                       -webkit-text-fill-color: transparent;
+                        -webkit-text-fill-color: transparent;
                     }
                 }
             }
@@ -202,8 +203,9 @@
                             font-weight: 900;
                             -webkit-background-clip: text;
                             background-clip: text;
+                            color: transparent;
                             background-image: linear-gradient($color-primary, $color-secondary);
-                           -webkit-text-fill-color: transparent;
+                            -webkit-text-fill-color: transparent;
                         }
                     }
                 }
@@ -238,9 +240,11 @@
                     font-weight: 400;
                     &:hover {
                         font-weight: 900;
+                        -webkit-background-clip: text;
                         background-clip: text;
                         background-image: linear-gradient($color-primary, $color-secondary);
-                       -webkit-text-fill-color: transparent;
+                        -webkit-text-fill-color: transparent;
+                        color: transparent;
                     }
                 }
             }

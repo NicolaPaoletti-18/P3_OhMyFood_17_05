@@ -1,4 +1,4 @@
-.block_page-1{
+.block_page-1 {
     padding: 0;
     position: relative;
     font-family: $font-primary;
@@ -16,7 +16,7 @@
     background-color: $color-white;
     animation: block-pages 1ms $block-pages both cubic-bezier(.9,0,.1,1);}
 }    
-    .block_page{
+    .block_page {
 
         font-family: $font-primary;
         color: $color-black;

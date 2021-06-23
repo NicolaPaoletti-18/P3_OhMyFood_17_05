@@ -259,6 +259,7 @@
 .proj-prev__btn-vert > span {
   width: 20%;
   margin: 10px;
+  padding: 2px;
   display: flex;
   position: absolute;
   background-color: #99E2D0;
@@ -274,6 +275,7 @@
   .proj-prev__btn-vert > span {
     width: 20%;
     margin: 10px;
+    padding: 2px;
     display: flex;
     position: absolute;
     background-color: #99E2D0;
@@ -291,6 +293,7 @@
   .proj-prev__btn-vert > span {
     width: 20%;
     margin: 10px;
+    padding: 2px;
     display: flex;
     position: absolute;
     background-color: #99E2D0;
@@ -516,6 +519,7 @@
   font-weight: 900;
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
 }
@@ -552,6 +556,7 @@
     font-weight: 900;
     -webkit-background-clip: text;
     background-clip: text;
+    color: transparent;
     background-image: linear-gradient(#9356DC, #FF79DA);
     -webkit-text-fill-color: transparent;
   }
@@ -587,9 +592,11 @@
   }
   .header_img_heading > .fa-heart:hover {
     font-weight: 900;
+    -webkit-background-clip: text;
     background-clip: text;
     background-image: linear-gradient(#9356DC, #FF79DA);
     -webkit-text-fill-color: transparent;
+    color: transparent;
   }
   .header--img {
     width: 100%;
@@ -610,6 +617,7 @@ footer .footer__heading {
   margin-top: 15px;
   margin-bottom: 10px;
   filter: invert(100%);
+  object-fit: cover;
 }
 footer .footer__ul {
   margin: 0px;
@@ -638,6 +646,7 @@ footer .footer__ul__link--a {
     margin-bottom: 10px;
     margin-top: 15px;
     filter: invert(100%);
+    object-fit: cover;
   }
   footer .footer__ul {
     margin: 0px;
@@ -832,7 +841,7 @@ footer .footer__ul__link--a {
     margin-left: 16%;
     color: #000;
     font-size: 15px;
-    font-size: 900;
+    font-weight: 900;
   }
 }
 
@@ -992,6 +1001,7 @@ section .container .proj-prev__txt .fa-heart:hover {
   -webkit-background-clip: text;
   background-image: linear-gradient(#9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 @media (max-width: 599px) {
   section .container .proj-prev {
@@ -1043,6 +1053,7 @@ section .container .proj-prev__txt .fa-heart:hover {
     background-clip: text;
     background-image: linear-gradient(#9356DC, #FF79DA);
     -webkit-text-fill-color: transparent;
+    color: transparent;
   }
 }
 
@@ -1072,6 +1083,7 @@ section .section__heading {
   width: 5%;
   display: flex;
   font-size: 30px;
+  font-weight: 400;
 }
 section .section__list {
   padding: 0px;
@@ -1127,7 +1139,8 @@ section .section__list__link:hover .section__list__link-type {
   width: 80%;
 }
 section .section__list__link:hover .section__list__link--span {
-  transition: 0.3s linear;
+  animation: 1 0.3s linear;
+  transition-delay: 0.3s;
   margin-right: 26%;
 }
 section .section__list__link:hover .hover {
@@ -1210,6 +1223,7 @@ section .section__list__link .container-txt-Over > p {
     width: 5%;
     display: flex;
     font-size: 30px;
+    font-weight: 400;
   }
   section .section__list {
     padding: 0px;
@@ -1246,8 +1260,6 @@ section .section__list__link .container-txt-Over > p {
     margin-top: -45px;
   }
   section .section__list__link:hover .container-txt > p {
-    transform: 3s;
-    transform-origin: right;
     margin: 0px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -1261,8 +1273,8 @@ section .section__list__link .container-txt-Over > p {
     width: 62%;
   }
   section .section__list__link:hover .section__list__link-type--span {
-    transition: 0.3s;
-    transition-delay: 0s;
+    animation: 1 0.3s linear;
+    transition-delay: 0.3s;
     margin-right: 23%;
   }
   section .section__list__link:hover .hover {
@@ -1337,6 +1349,7 @@ section .section__list__link .container-txt-Over > p {
     border-bottom: 2px solid #99E2D0;
     width: 9%;
     font-size: 15px;
+    font-weight: 400;
   }
   section .section__list {
     padding: 0px;
@@ -1373,7 +1386,8 @@ section .section__list__link .container-txt-Over > p {
     margin-top: -40px;
   }
   section .section__list__link:hover .section__list__link--span {
-    transition: 0.3s linear;
+    animation: 1 0.3s linear;
+    transition-delay: 0.3s;
     margin-right: 20%;
   }
   section .section__list__link:hover .animation .hover {

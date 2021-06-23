@@ -120,7 +120,8 @@ section {
               background-clip: text;
               -webkit-background-clip: text;
               background-image: linear-gradient($color-primary, $color-secondary);
-             -webkit-text-fill-color: transparent;
+              -webkit-text-fill-color: transparent;
+              color: transparent;
           }
           }
           
@@ -130,43 +131,44 @@ section {
 
         @include cards;
 
-        &:hover{
+        &:hover {
             transform: scale(1.05);
         }
-        &__a{
+        &__a {
             text-decoration: none;
         }
-        &__img{
+        &__img {
             object-fit: cover;
             width: 100%;
             height: 150px;
             border-radius: $size $size 0px 0px;
         }
-        &__txt{
+        &__txt {
             width: 90%;
             height: 60px;
             margin: 10px;
             margin-left: 20px;
             color: $color-black;
-            .p{
+            .p {
                 margin-top: -10px;
             }
-            .heart{
+            .heart {
                 width: 100%;
                 justify-content: flex-end;
                 display: flex;
             }
-            .fa-heart{
+            .fa-heart {
                 font-size: $size;
                 margin:0 ;
                 margin-top: -10px;
                 font-weight: 400;
                 
-                &:hover{
+                &:hover {
                     font-weight: 900;
                     background-clip: text;
                     background-image: linear-gradient($color-primary, $color-secondary);
-                   -webkit-text-fill-color: transparent;
+                    -webkit-text-fill-color: transparent;
+                    color: transparent;
                 }
             }
             
@@ -197,6 +199,7 @@ section {
       width: 5%;
       display: flex;
       font-size: $font-size-1200px;
+      font-weight: 400;
     }
     &__list {
       padding: 0px;
@@ -246,7 +249,8 @@ section {
           width: 80%;
         }
         .section__list__link--span {
-          transition: 0.3s linear;
+          animation: 1 0.3s linear;
+          transition-delay: 0.3s;
           margin-right: 26%;
         }
          .hover {
@@ -334,6 +338,7 @@ section {
         width: 5%;
         display: flex;
         font-size: $font-size-1200px;
+        font-weight: 400;
       }
       &__list {
         padding: 0px;
@@ -362,8 +367,6 @@ section {
         &:hover {
           .container-txt {
             > p {
-              transform: 3s;
-              transform-origin: right;
               margin: 0px;
               text-overflow: ellipsis;
               white-space: nowrap;
@@ -378,8 +381,8 @@ section {
             width: 62%;
           }
           .section__list__link-type--span {
-            transition: 0.3s;
-            transition-delay: 0s;
+            animation: 1 0.3s linear;
+            transition-delay: 0.3s;
             margin-right: 23%;
           }
            .hover {
@@ -461,6 +464,7 @@ section {
         border-bottom: 2px solid $color-tertiary; 
         width: 9%;
         font-size: $font-size;
+        font-weight: 400;
       }
       &__list {
           padding: 0px;
@@ -490,7 +494,8 @@ section {
         }
           &:hover {
             .section__list__link--span{
-              transition: 0.3s linear;
+              animation: 1 0.3s linear;
+              transition-delay: 0.3s;
               margin-right: 20%;
             }
           
