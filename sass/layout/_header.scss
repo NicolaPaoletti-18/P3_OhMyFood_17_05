@@ -157,16 +157,32 @@
                 margin-top: 0px;
                 background-color: $color-background;
                 border-radius: 36px 36px 0px 0px;
-                >.fa-heart {
-                    font-weight: 400;
-                    &:hover {
-                        font-weight: 900;
-                        -webkit-background-clip: text;
-                        background-clip:none;
-                        color: transparent;
-                        background-image: linear-gradient($color-primary, $color-secondary);
-                        -webkit-text-fill-color: transparent;
+                .heart{
+                  &:hover{
+                    .far{
+                      opacity: 0;
                     }
+                    .fas{
+                      opacity: 1;
+                    }
+                  }
+                .far{
+                  position:relative;
+                  font-size: $font-size-heading-1200px;
+                  opacity: 1;
+                  margin-top: 5px;
+                }
+                .fas {
+                    margin:0 ;
+                    margin-top: 5px;
+                    position:absolute;
+                    opacity: 0;
+                    font-size: $font-size-heading-1200px;
+                    background-clip: content-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: $color-icones ;
+                  }
                 }
             }
         }
@@ -197,16 +213,34 @@
                     margin-top: 0px;
                     background-color: $color-background;
                     border-radius: 36px 36px 0px 0px;
-                    >.fa-heart {
-                        font-weight: 400;
-                        &:hover {
-                            font-weight: 900;
-                            -webkit-background-clip: text;
-                            background-clip:none;
-                            color: transparent;
-                            background-image: linear-gradient($color-primary, $color-secondary);
-                            -webkit-text-fill-color: transparent;
+                    .heart{
+                      &:hover{
+                        .far{
+                          opacity: 0;
                         }
+                        .fas{
+                          opacity: 1;
+                        }
+                      }
+                    .far{
+                      position:relative;
+                      font-size: $font-size-heading-1200px;
+                      opacity: 1;
+                      margin-top: 5px;
+                    }
+                    .fas {
+                        margin:0 ;
+                        margin-top: 5px;
+                        position:absolute;
+                        opacity: 0;
+                        font-size: $font-size-heading-1200px;
+                        background-clip: content-box;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-image: $color-icones ;
+                    
+                    
+                  }
                     }
                 }
             }
@@ -228,7 +262,7 @@
                 font-family: $font-heading;
                 font-size: $font-size-heading;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 width:96.9%;
                 height: 54px;
                 position: absolute;
@@ -236,18 +270,33 @@
                 padding-top: 25px;
                 background-color: $color-background;
                 border-radius: 36px 36px 0px 0px;
-                > .fas {
-                    font-weight: 400;
-                    background-color: transparent ;
-                    &:hover {
-                      .fa-heart {
-                        font-weight: 900;
-                        background-image: linear-gradient($color-primary, $color-secondary);
-                        color: transparent;
-                        -webkit-text-fill-color: transparent;
-                      }
+                .heart{
+                  &:hover{
+                    .far{
+                      opacity: 0;
                     }
+                    .fas{
+                      opacity: 1;
+                    }
+                  }
+                .far{
+                  position:relative;
+                  font-size: $size;
+                  opacity: 1;
+                  margin-top: 5px;
                 }
+                .fas {
+                    margin:0 ;
+                    margin-top: 5px;
+                    position:absolute;
+                    opacity: 0;
+                    font-size: $size;
+                    background-clip: content-box;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image: $color-icones ;
+                }
+              }
             }
         }
         &--img {

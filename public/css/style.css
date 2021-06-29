@@ -512,16 +512,28 @@
   background-color: #f2f2f2;
   border-radius: 36px 36px 0px 0px;
 }
-.header_img_heading > .fa-heart {
-  font-weight: 400;
+.header_img_heading .heart:hover .far {
+  opacity: 0;
 }
-.header_img_heading > .fa-heart:hover {
-  font-weight: 900;
+.header_img_heading .heart:hover .fas {
+  opacity: 1;
+}
+.header_img_heading .heart .far {
+  position: relative;
+  font-size: 40px;
+  opacity: 1;
+  margin-top: 5px;
+}
+.header_img_heading .heart .fas {
+  margin: 0;
+  margin-top: 5px;
+  position: absolute;
+  opacity: 0;
+  font-size: 40px;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: none;
-  color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
 }
 .header--img {
   width: 100%;
@@ -549,16 +561,28 @@
     background-color: #f2f2f2;
     border-radius: 36px 36px 0px 0px;
   }
-  .header_img_heading > .fa-heart {
-    font-weight: 400;
+  .header_img_heading .heart:hover .far {
+    opacity: 0;
   }
-  .header_img_heading > .fa-heart:hover {
-    font-weight: 900;
+  .header_img_heading .heart:hover .fas {
+    opacity: 1;
+  }
+  .header_img_heading .heart .far {
+    position: relative;
+    font-size: 40px;
+    opacity: 1;
+    margin-top: 5px;
+  }
+  .header_img_heading .heart .fas {
+    margin: 0;
+    margin-top: 5px;
+    position: absolute;
+    opacity: 0;
+    font-size: 40px;
+    background-clip: content-box;
     -webkit-background-clip: text;
-    background-clip: none;
-    color: transparent;
-    background-image: linear-gradient(#9356DC, #FF79DA);
     -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
   }
   .header--img {
     width: 100%;
@@ -578,7 +602,7 @@
     font-family: "Shrikhand";
     font-size: 25px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 96.9%;
     height: 54px;
     position: absolute;
@@ -587,15 +611,28 @@
     background-color: #f2f2f2;
     border-radius: 36px 36px 0px 0px;
   }
-  .header_img_heading > .fas {
-    font-weight: 400;
-    background-color: transparent;
+  .header_img_heading .heart:hover .far {
+    opacity: 0;
   }
-  .header_img_heading > .fas:hover .fa-heart {
-    font-weight: 900;
-    background-image: linear-gradient(#9356DC, #FF79DA);
-    color: transparent;
+  .header_img_heading .heart:hover .fas {
+    opacity: 1;
+  }
+  .header_img_heading .heart .far {
+    position: relative;
+    font-size: 25px;
+    opacity: 1;
+    margin-top: 5px;
+  }
+  .header_img_heading .heart .fas {
+    margin: 0;
+    margin-top: 5px;
+    position: absolute;
+    opacity: 0;
+    font-size: 25px;
+    background-clip: content-box;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
   }
   .header--img {
     width: 100%;
@@ -981,26 +1018,35 @@ section .container .proj-prev__txt {
   color: #000;
 }
 section .container .proj-prev__txt .p {
-  margin-top: -10px;
+  margin-top: 5px;
 }
 section .container .proj-prev__txt .heart {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
-section .container .proj-prev__txt .fa-heart {
-  font-size: 30px;
+section .container .proj-prev__txt .heart:hover .far {
+  opacity: 0;
+}
+section .container .proj-prev__txt .heart:hover .fas {
+  opacity: 1;
+}
+section .container .proj-prev__txt .far {
+  position: absolute;
+  font-size: 25px;
+  opacity: 1;
+  margin-top: -10px;
+}
+section .container .proj-prev__txt .fas {
+  opacity: 0;
   margin: 0;
   margin-top: -10px;
-  font-weight: 400;
-}
-section .container .proj-prev__txt .fa-heart:hover {
-  font-weight: 900;
+  position: absolute;
+  font-size: 25px;
+  background-clip: content-box;
   -webkit-background-clip: text;
-  background-clip: none;
-  background-image: linear-gradient(#9356DC, #FF79DA);
   -webkit-text-fill-color: transparent;
-  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
 }
 @media (max-width: 599px) {
   section .container .proj-prev {
@@ -1034,26 +1080,36 @@ section .container .proj-prev__txt .fa-heart:hover {
     color: #000;
   }
   section .container .proj-prev__txt .p {
-    margin-top: -10px;
+    margin-top: 5px;
   }
   section .container .proj-prev__txt .heart {
     width: 100%;
     justify-content: flex-end;
     display: flex;
+    position: relative;
   }
-  section .container .proj-prev__txt .fa-heart {
+  section .container .proj-prev__txt .heart:hover .far {
+    opacity: 0;
+  }
+  section .container .proj-prev__txt .heart:hover .fas {
+    opacity: 1;
+  }
+  section .container .proj-prev__txt .far {
+    position: absolute;
     font-size: 25px;
+    opacity: 1;
+    margin-top: -10px;
+  }
+  section .container .proj-prev__txt .fas {
     margin: 0;
     margin-top: -10px;
-    font-weight: 400;
-  }
-  section .container .proj-prev__txt .fa-heart:hover {
-    font-weight: 900;
+    position: absolute;
+    opacity: 0;
+    font-size: 25px;
+    background-clip: content-box;
     -webkit-background-clip: text;
-    background-clip: none;
-    background-image: linear-gradient(#9356DC, #FF79DA);
     -webkit-text-fill-color: transparent;
-    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
   }
 }
 
