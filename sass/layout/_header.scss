@@ -162,7 +162,7 @@
                     &:hover {
                         font-weight: 900;
                         -webkit-background-clip: text;
-                        background-clip: text;
+                        background-clip:none;
                         color: transparent;
                         background-image: linear-gradient($color-primary, $color-secondary);
                         -webkit-text-fill-color: transparent;
@@ -202,7 +202,7 @@
                         &:hover {
                             font-weight: 900;
                             -webkit-background-clip: text;
-                            background-clip: text;
+                            background-clip:none;
                             color: transparent;
                             background-image: linear-gradient($color-primary, $color-secondary);
                             -webkit-text-fill-color: transparent;
@@ -236,15 +236,16 @@
                 padding-top: 25px;
                 background-color: $color-background;
                 border-radius: 36px 36px 0px 0px;
-                >.fa-heart {
+                > .fas {
                     font-weight: 400;
+                    background-color: transparent ;
                     &:hover {
+                      .fa-heart {
                         font-weight: 900;
-                        -webkit-background-clip: text;
-                        background-clip: text;
                         background-image: linear-gradient($color-primary, $color-secondary);
-                        -webkit-text-fill-color: transparent;
                         color: transparent;
+                        -webkit-text-fill-color: transparent;
+                      }
                     }
                 }
             }

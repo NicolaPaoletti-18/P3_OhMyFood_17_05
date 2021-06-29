@@ -117,8 +117,8 @@ section {
             font-weight: 400;
             &:hover{
               font-weight: 900;
-              background-clip: text;
               -webkit-background-clip: text;
+              background-clip:none;
               background-image: linear-gradient($color-primary, $color-secondary);
               -webkit-text-fill-color: transparent;
               color: transparent;
@@ -165,7 +165,8 @@ section {
                 
                 &:hover {
                     font-weight: 900;
-                    background-clip: text;
+                    -webkit-background-clip: text;
+                    background-clip:none;
                     background-image: linear-gradient($color-primary, $color-secondary);
                     -webkit-text-fill-color: transparent;
                     color: transparent;
